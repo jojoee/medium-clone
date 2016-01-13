@@ -1,15 +1,15 @@
 {
-  "name": "sage",
-  "version": "8.4.0",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
+  "name": "medium-clone",
+  "version": "1.0.0",
+  "author": "Nathachai Thongniran <inid3a@gmail.com>",
+  "homepage": "https://github.com/jojoee/medium-clone",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/sage.git"
+    "url": "git://github.com/jojoee/medium-clone.git"
   },
   "bugs": {
-    "url": "https://github.com/roots/sage/issues"
+    "url": "https://github.com/jojoee/medium-clone/issues"
   },
   "licenses": [
     {

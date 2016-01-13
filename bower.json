@@ -1,8 +1,8 @@
 {
-  "name": "sage",
-  "homepage": "https://roots.io/sage/",
+  "name": "medium-clone",
+  "homepage": "https://github.com/jojoee/medium-clone",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "Nathachai Thongniran <inid3a@gmail.com>"
   ],
   "license": "MIT",
   "private": true,

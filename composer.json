@@ -1,27 +1,21 @@
 {
-  "name": "roots/sage",
+  "name": "medium-clone",
   "type": "wordpress-theme",
   "license": "MIT",
-  "description": "The best WordPress starter theme with a modern front-end development workflow. Based on HTML5 Boilerplate, gulp, Bower, and Bootstrap.",
-  "homepage": "https://roots.io/sage/",
+  "description": "medium.com clone for wordpress.",
+  "homepage": "https://github.com/jojoee/medium-clone",
   "authors": [
     {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    },
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
+      "name": "Nathachai Thongniran",
+      "email": "inid3a@gmail.com",
+      "homepage": "https://github.com/jojoee"
     }
   ],
   "keywords": [
     "wordpress"
   ],
   "support": {
-    "issues": "https://github.com/roots/sage/issues",
-    "forum": "https://discourse.roots.io/"
+    "issues": "https://github.com/jojoee/medium-clone/issues"
   },
   "require": {
     "php": ">=5.4.0",
