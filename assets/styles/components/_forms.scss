@@ -1,15 +1,27 @@
 // Search form
 .search-form {
-  @extend .form-inline;
+  margin: $space2 0;
+
+  label {
+    font-weight: normal;
+  }
+
+  .search-field {
+    
+  }
+
+  .search-submit {
+    display: none;
+  }
 }
-.search-form label {
-  font-weight: normal;
-  @extend .form-group;
+
+// Contact Form 7
+// based on .comment-respond
+.wpcf7 {
+  border: 1px solid $border-color;
+  border-radius: 2px;
 }
-.search-form .search-field {
-  @extend .form-control;
-}
-.search-form .search-submit {
-  @extend .btn;
-  @extend .btn-default;
+
+.wpcf7-form {
+  padding: $space2 $space4;
 }

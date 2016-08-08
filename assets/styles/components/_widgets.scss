@@ -1,0 +1,67 @@
+.widget {
+  overflow: hidden;
+  border-bottom: 1px solid $border-color;
+  padding: $space3 0;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+  
+  // Title
+  h3 {
+    margin-top: 0;
+  }
+  
+  // Listing
+  // (e.g. archive, category)
+  ul {
+
+    li {
+
+    }
+  }
+  
+  // Search widget
+  &.widget_search {
+
+    .search-submit {
+      display: none;
+    } 
+  }
+
+  // Calendar
+  &.widget_calendar {
+
+    #wp-calendar {
+      width: 100%;
+
+      > caption {
+        margin-bottom: $space2;
+      }
+
+      > tbody {
+
+        td,
+        th {
+          text-align: center;
+        }
+      }
+
+      > tfoot {
+
+        #prev,
+        #next {
+          padding-top: $space2;
+        }
+
+        #prev {
+          text-align: left;
+        }
+
+        #next {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

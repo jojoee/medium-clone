@@ -1,9 +1,58 @@
-// Glyphicons font path
-$icon-font-path:        "../fonts/";
+/*================================================================ Color
+*/
 
-// Grid settings
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
+$white: #ffffff;
+$black: #33333d;
+$gray: #f9f9f9; // unused
+$gray-dark: #b5b5b5; // unused
+$gray-light: #fdfdfd; // unused
+$accent-color: #00ab6b;
+$accent-hover-color: #06e08e;
 
-// Colors
-$brand-primary:         #27ae60;
+$body-bg: #ffffff !default;
+$text-color: #333333 !default;
+$hr-border: #eeeeee !default;
+$code-bg-color: #f9f9f9;
+$border-color: rgba(0, 0, 0, .09) !default;
+$box-shadow-color: rgba(0, 0, 0, .15) !default;
+$btn-color: #ff0000 !default; // unused
+$btn-shadow-color: #6d6d6d;
+$copyright-color: #b5b5b5;
+$article-bg-color: $white; // unused
+$even-article-bg-color: #fbfbfb;
+$sticky-article-bg-color: $accent-color;
+
+$label-color: #9e9e9e !default; // used for form
+$input-bg-color: #f9f9f9 !default;
+$input-border-color: #d1d1d1 !default;
+$blockquote-bg-color: #f9f9f9 !default;
+$blockquote-border-color: #d1d1d1 !default;
+$link-color: $accent-color !default;
+$link-hover-color: $accent-hover-color !default;
+
+$nav-link-border-color: #3e3e3e;
+$nav-submenu-bg-color: #3a3a3a;
+$nav-expand-icon-color: #b1b1b1;
+
+/*================================================================ Sage + Bootstrap
+*/
+
+// Grid
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
+
+// Sage + Bootstrap
+$font-size-base: 14px !default;
+$line-height-base: 1.428571429 !default;
+$line-height-computed: floor($font-size-base * $line-height-base) !default;
+$thumbnail-caption-padding: 9px !default;
+
+/*================================================================ Grid
+*/
+
+/*
+@media (max-width: $screen-xs-max) { ... }
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { ... }
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) { ... }
+@media (min-width: $screen-lg-min) { ... }
+*/

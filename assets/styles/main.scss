@@ -1,4 +1,8 @@
-@import "common/variables";
+/**
+ * Comment
+ * - Normal: Capitalize
+ * - Hack: Uppercase
+ */
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
@@ -6,15 +10,23 @@
 @import "../../bower_components/jeans-kit/sass/jeans-kit.scss";
 // endbower
 
+@import "common/variables";
+@import "common/mixins";
+@import "common/functions";
 @import "common/global";
+
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
 @import "components/grid";
+@import "components/paginations";
+@import "components/widgets";
+@import "components/vendors";
 @import "components/wp-classes";
-@import "layouts/header";
-@import "layouts/sidebar";
+
 @import "layouts/footer";
+@import "layouts/header";
 @import "layouts/pages";
 @import "layouts/posts";
+@import "layouts/sidebar";
 @import "layouts/tinymce";

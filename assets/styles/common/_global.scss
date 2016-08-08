@@ -1,1 +1,162 @@
+// https://css-tricks.com/box-sizing/
+html {
+  @include border-box;
+}
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  color: $text-color;
+  background-color: $body-bg;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  @include transition;
+  
+  &:active,
+  &:focus,
+  &.visited,
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+a.nounderline {
+
+  &:active,
+  &:focus,
+  &.visited,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* hack */
+/**
+ * hack
+ * due to "Italiana" support
+ * only normal font-weight
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+textarea {
+  background-color: $input-bg-color;
+  background-image: -webkit-linear-gradient(hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0));
+  border: 1px solid $input-border-color;
+  border-radius: 2px;
+  color: $black;
+  width: 100%;
+  padding: $space1;
+  @include border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select {
+  width: 100%;
+  border: 1px solid $input-border-color;
+  border-radius: 2px;
+  width: 100%;
+  padding: $space1;
+  background-color: $input-bg-color;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: $white;
+  box-shadow: 3px 3px 3px -3px $btn-shadow-color;
+
+  &:hover,
+  &:focus {
+    background-color: $link-color;
+    color: $white;
+  }
+
+  &,
+  &[disabled]:hover,
+  &[disabled]:focus {
+    border: 0;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: $space2;
+    @include transition;
+    @include border-box;
+  }
+}
+
+ul {
+  list-style: disc;
+  padding-left: $space1;
+  margin-left: $space2;
+}
+
+blockquote {
+  margin: 0;
+  background-color: $blockquote-bg-color;
+  border-left: 3px solid $blockquote-border-color;
+  padding: $space1 $space2;
+}
+
+hr {
+  border-top: 1px solid $hr-border;
+}
+
+pre {
+  padding: $space2;
+  border-radius: 2px;
+}
+
+pre,
+kbd,
+code,
+samp {
+  background-color: $code-bg-color;
+}
+
+/*================================================================ Wrap
+*/
+
+.body-wrap {
+  background-color: $white;
+  margin-top: 115px;
+}
+
+.wrap {
+  
+}
+
+/*================================================================ Common
+*/
+
+.italiana {
+  font-family: 'Italiana', sans-serif, serif;
+}

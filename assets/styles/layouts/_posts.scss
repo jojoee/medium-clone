@@ -1,0 +1,129 @@
+/*================================================================ Article
+*/
+
+main > article {
+  padding: 0 0 $space6;
+  background-color: $white;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+  
+  header {
+
+    .entry-title {
+      margin: 0 0 $space4;
+    
+      a {
+        font-size: 32px;
+        color: $black;
+
+        &:hover {
+          color: $link-hover-color;
+        }
+      }
+    }
+
+    .updated {
+
+    }
+
+    .author {
+
+    }
+  }
+
+  figure {
+    
+    figcaption {
+      border: 1px solid $border-color;
+    }
+  }
+  
+  // Single post / page only
+  .entry-content {
+    @extend .clearfix;
+    margin: $space2 0;
+    overflow: hidden;
+  }
+  
+  // Single post / page only
+  .entry-other {
+    @extend .clearfix;
+  }
+  
+  // Listing only
+  .entry-summary {
+    @extend .clearfix;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  &.sticky {
+
+  }
+}
+
+.article-meta {
+  
+  .updated {
+
+  }
+
+  .author {
+
+    > a {
+
+    }
+  }
+}
+
+// Listing
+body.home main > article,
+body.search-results main > article,
+body.archive main > article {
+  padding: $space10 0;
+
+  &:nth-child(2n) {
+    background-color: $even-article-bg-color;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding: $space20 0;
+  }
+}
+
+// Individual
+body.single-post main > article,
+body.attachment main > article,
+body.error404 main > article,
+body.search-no-results main > article {
+  padding: $space8 0;
+}
+
+// Individual
+// cause `page` have `page-header`
+body.page main > article {
+  padding: $space2 0;
+}
+
+/*================================================================ Post Navigation
+*/
+
+.posts-navigation-wrap {
+
+  .nav-previous,
+  .nav-next {
+    padding: $space8 0;
+  }
+
+  .nav-previous {
+    float: left;
+  }
+
+  .nav-next {
+    float: right;
+  }
+}

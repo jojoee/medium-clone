@@ -1,0 +1,31 @@
+/*================================================================ WP-PageNavi
+*/
+
+.posts-navigation-wrap {
+  text-align: center;
+  margin: $space8 0;
+}
+
+.wp-pagenavi {
+
+  > span.pages {
+    border: none;
+  }
+
+  a,
+  span {
+    padding: $space1 $space2;
+    margin: 2px;
+    border-color: $border-color;
+  }
+
+  a:hover,
+  a:focus,
+  a:active,
+  span.current {
+    color: $white;
+    background-color: $accent-color;
+    border-color: $accent-color;
+    text-decoration: none;
+  }
+}

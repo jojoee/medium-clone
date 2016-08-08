@@ -1,0 +1,25 @@
+/*================================================================ Banner
+*/
+
+
+/*================================================================ Nav Menu
+*/
+
+.nav-primary-btn {
+  display: none;
+}
+
+.nav-primary {
+  // display: none;
+  height: 115px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  box-shadow: 0 0 1px $box-shadow-color;
+
+  .nav {
+    margin-top: 0;
+  }
+}

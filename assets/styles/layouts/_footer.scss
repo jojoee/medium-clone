@@ -1,0 +1,18 @@
+.footer-sidebar {
+  
+  // HACK
+  > .container {
+    padding: $space6 0;
+  }
+}
+
+.content-info {
+  height: $space12;
+  line-height: $space12;
+  color: $copyright-color;
+  text-align: center;
+
+  .colophon {
+
+  }
+}
