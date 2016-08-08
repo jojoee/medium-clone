@@ -1,5 +1,8 @@
 <?php
 
+/*================================================================ Domain
+*/
+
 function get_site_domain() {
   $result = '';
   $sitename = get_site_url();
@@ -15,6 +18,20 @@ function the_site_domain() {
   echo get_site_domain();
 }
 
+/*================================================================ String
+*/
+
+function get_limited_string( $str, $length ) {
+  $str_length = strlen( $str );
+
+  if ( $str_length > $length ) {
+    $str = substr( $str, 0, $length );
+    $str = substr( $str, 0, -3 ) . '...';
+  }
+
+  return $str;
+}
+
 /**
  * [is_null_or_empty_string description]
  *
@@ -25,18 +42,6 @@ function the_site_domain() {
  */
 function is_null_or_empty_string( $str ) {
   return ( ! isset( $str ) || trim( $str ) === '' );
-}
-
-function get_background_image_style( $url = '' ) {
-  $result = ( ! is_null_or_empty_string( $url ) )
-    ? 'style="background-image: url(\'' . $url . '\');"'
-    : '';
-
-  return $result;
-}
-
-function the_background_image_style( $url = '' ) {
-  echo get_background_image_style( $url );
 }
 
 /**
@@ -51,4 +56,19 @@ function get_word_count( $content = '' ) {
   $word_count = str_word_count( strip_tags( $content ) );
 
   return $word_count;
+}
+
+/*================================================================ Image
+*/
+
+function get_background_image_style( $url = '' ) {
+  $result = ( ! is_null_or_empty_string( $url ) )
+    ? 'style="background-image: url(\'' . $url . '\');"'
+    : '';
+
+  return $result;
+}
+
+function the_background_image_style( $url = '' ) {
+  echo get_background_image_style( $url );
 }

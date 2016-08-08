@@ -1,5 +1,8 @@
 <?php
 
+/*================================================================ Echo
+*/
+
 function dd( $var = null, $die = true ) {
   echo '<pre>';
   print_r( $var );
@@ -22,6 +25,9 @@ function dhead( $head, $var ) {
   echo '</div>';
 }
 
+/*================================================================ Dummy
+*/
+
 function get_dummy_image_uri() {
   $dummy_img = get_template_directory_uri() . '/dist/images/dummy-img.jpg';
   
@@ -36,6 +42,9 @@ function the_dummy_image_uri() {
 function the_dummy_background_image_style() {
   the_background_image_style( get_dummy_image_uri() );
 }
+
+/*================================================================ Author
+*/
 
 function debug_author_meta() {
   echo '<pre>';
@@ -58,6 +67,9 @@ function debug_author_meta() {
   printf( '%s: %s<br />', 'avatar_url', get_wpauthor_avatar_url() );
   echo '</pre>';
 }
+
+/*================================================================ Condition
+*/
 
 // http://stackoverflow.com/questions/1005857/how-to-call-php-function-from-string-stored-in-a-variable
 // https://developer.wordpress.org/themes/basics/conditional-tags/
