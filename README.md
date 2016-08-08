@@ -4,19 +4,17 @@
 
 medium.com clone for wordpress
 
-=== Getting started (development purpose) ===
+## Getting started (development purpose)
 
-1. Set path (e.g. `cd wp-content/themes/medium-clone/`)
-2. Install global - `npm install -g bower gulp jscs`
-3. Install dependencies - `npm install & bower install & composer install`
-4. Set proxy on `devUrl` in `wp-content\themes\medium-clone\assets\manifest.json`
-5. Run task runner - `gulp` or `gulp` watch (for develop)
+1. Install [Node.js](https://nodejs.org/)
+2. Set path (e.g. `cd wp-content/themes/medium-clone/`)
+3. Install global: `npm install -g bower gulp jscs`
+4. Install dependencies: `npm install & bower install`
+5. Set proxy on `devUrl` in `wp-content\themes\medium-clone\assets\manifest.json`
+6. Build current source: `gulp`
+6. Run task runner: `gulp watch`
 
-=== Note ===
-
-* [ ] 
-
-=== Support ===
+## Support
 
 * [ ] [WP-PageNavi](https://wordpress.org/plugins/wp-pagenavi/)
 * [ ] [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
@@ -37,7 +35,7 @@ medium.com clone for wordpress
 * [ ] [bbPress](https://wordpress.org/plugins/bbpress/)
 * [ ] [BuddyPress](https://wordpress.org/plugins/buddypress/)
 
-=== Future update ===
+## Future update
 
 * [ ] Lightbox: (e.g. [MediumLightbox](https://github.com/davidecalignano/MediumLightbox), [Fluidbox](https://github.com/terrymun/Fluidbox), [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/))
 * [x] Google Fonts: [Web Font Loader](https://github.com/typekit/webfontloader)
@@ -46,8 +44,9 @@ medium.com clone for wordpress
 * [ ] Navmenu: when hover then show scrollbar
 * [ ] Fix `.travis.yml`
 * [ ] Translation ready
+* [ ] Fix `PACE`
 
-=== Checklist ===
+## Checklist
 
 * [x] Theme unit test: [wptest.io](http://wptest.io/)
 * [ ] Page Layout - [Home](http://localhost:3000/)
@@ -66,7 +65,7 @@ medium.com clone for wordpress
 * [ ] [Log Deprecated Notices](https://wordpress.org/plugins/log-deprecated-notices/)
 * [ ] [RTL Tester](https://wordpress.org/plugins/rtl-tester/)
 
-=== Reference & Thank you ===
+## Reference & Thank you
 
 * [Wordpress.org](https://wordpress.org/themes/)
 * Original website: [Medium](https://medium.com/)
