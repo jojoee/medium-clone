@@ -10,7 +10,8 @@
   "dependencies": {
     "fastclick": "^1.0.6",
     "font-awesome": "^4.6.3",
-    "jeans-kit": "^1.1.2"
+    "jeans-kit": "^1.1.2",
+    "PACE": "pace#^1.0.2"
   },
   "overrides": {
     "fastclick": {
@@ -31,6 +32,11 @@
     "jeans-kit": {
       "main": [
         "./sass/jeans-kit.scss"
+      ]
+    },
+    "PACE": {
+      "main": [
+        "./pace.min.js"
       ]
     }
   }
