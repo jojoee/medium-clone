@@ -1,8 +1,8 @@
 {
   "name": "medium-clone",
+  "description": "medium.com clone (wordpress theme)",
   "type": "wordpress-theme",
-  "license": "MIT",
-  "description": "medium.com clone for wordpress.",
+  "license": "GPL",
   "homepage": "https://github.com/jojoee/medium-clone",
   "authors": [
     {

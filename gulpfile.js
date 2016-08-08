@@ -12,13 +12,13 @@ var jshint       = require('gulp-jshint');
 var lazypipe     = require('lazypipe');
 var less         = require('gulp-less');
 var merge        = require('merge-stream');
-var minifyCss    = require('gulp-minify-css');
+var cssNano      = require('gulp-cssnano'); // unused
 var plumber      = require('gulp-plumber');
 var rev          = require('gulp-rev');
 var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
-var uglify       = require('gulp-uglify');
+var uglify       = require('gulp-uglify'); // unused
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -90,7 +90,7 @@ var cssTasks = function(filename) {
     })
     .pipe(function() {
       return gulpif('*.scss', sass({
-        outputStyle: 'nested', // libsass doesn't support expanded yet
+        outputStyle: 'expanded', // libsass doesn't support expanded yet
         precision: 10,
         includePaths: ['.'],
         errLogToConsole: !enabled.failStyleTask
@@ -103,10 +103,6 @@ var cssTasks = function(filename) {
         'android 4',
         'opera 12'
       ]
-    })
-    .pipe(minifyCss, {
-      advanced: false,
-      rebase: false
     })
     .pipe(function() {
       return gulpif(enabled.rev, rev());
@@ -131,11 +127,6 @@ var jsTasks = function(filename) {
       return gulpif(enabled.maps, sourcemaps.init());
     })
     .pipe(concat, filename)
-    .pipe(uglify, {
-      compress: {
-        'drop_debugger': enabled.stripJSDebug
-      }
-    })
     .pipe(function() {
       return gulpif(enabled.rev, rev());
     })

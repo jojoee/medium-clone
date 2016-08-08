@@ -1,19 +1,154 @@
+/*
+.comment-wrap {
+  margin-top: $space10;
+  box-shadow: inset 0 1px 0 0 $white;
+  border-top: 2px solid $black;
+  clear: both;
+  @include border-box;
+  overflow: hidden;
+}
+
+.comments {
+
+  > h2 {
+    margin: $space4 0;
+  }
+  
+  .pager {
+
+    > .previous {
+
+    }
+
+    > .next {
+
+    }
+  }
+  
+  // Comment are closed
+  .alert.alert-warning {
+
+  }
+
+  .pingback {
+    margin: $space1 0;
+  }
+
+  .comment {
+    list-style: none;
+
+    &.bypostauthor {
+
+      .vcard {
+
+        b.fn:before {
+          content: 'Author';
+          background-color: $accent-color;
+          color: $white;
+          padding: $space1 / 2 $space1;
+          border-radius: 2px;
+          margin-right: $space1;
+        }
+      }
+    }
+  }
+}
+
 .comment-list {
-  @include list-unstyled;
+  margin: 0;
+  padding: 0;
+  
+  article {
+    position: relative;
+    padding: $space4 0;
+    border-top: 1px solid $gray;
+  }
+  
+  // Comment meta
+  .comment-meta {
+
+    .comment-author {
+
+      img {
+        height: 42px;
+        position: relative;
+        width: 42px;
+        border-radius: 50%;
+        margin-right: $space1;
+      }
+  
+      b,
+      a {
+        // HACK
+        font-weight: normal;
+      }
+
+      .says {
+        
+      }
+    }
+
+    .comment-metadata {
+      margin-top: $space1;
+
+      time {
+
+      }
+    }
+  }
+
+  .comment-content {
+
+  }
+  
+  .comment-reply-link {
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    color: $accent-color;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1;
+    padding: $space1;
+
+    &:hover {
+      border-color: $accent-color;
+      text-decoration: none;
+    }
+  }
 }
-.comment-list ol {
-  list-style: none;
+
+.comment-respond {
+  border: 1px solid $border-color;
+  padding: $space2 $space4;
+  border-radius: 2px;
+  margin: $space2 0;
+
+  .comment-reply-title {
+    
+  }
+
+  #cancel-comment-reply-link {
+    float: right;
+    height: 22px;
+    overflow: hidden;
+    width: 40px;
+
+    &:before {
+      content: 'close';
+      font-size: 16px;
+      margin-right: $space1;
+    }
+  }
+
+  .comment-form {
+    color: $label-color;
+
+    label {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+  }
 }
-.comment-form p {
-  @extend .form-group;
-}
-.comment-form input[type="text"],
-.comment-form input[type="email"],
-.comment-form input[type="url"],
-.comment-form textarea {
-  @extend .form-control;
-}
-.comment-form input[type="submit"] {
-  @extend .btn;
-  @extend .btn-primary;
-}
+*/

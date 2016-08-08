@@ -1,1 +1,2 @@
-<?php dynamic_sidebar('sidebar-primary'); ?>
+<?php /* unused */ ?>
+<?php dynamic_sidebar( 'sidebar-primary' ); ?>

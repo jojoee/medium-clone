@@ -1,13 +1,17 @@
-# dependency
+# Dependency
 bower_components
 node_modules
 vendor
 
-# built
+# Dist
 dist
 npm-debug.log
 
-# my
+# Backup
+.idea
 bk
 README*.md
 !README-*.md
+# readme*.txt
+# !readme-*.txt
+medium-clone.zip
