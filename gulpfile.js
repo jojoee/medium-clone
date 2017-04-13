@@ -311,7 +311,7 @@ gulp.task('pack', ['clean.release'], function() {
     './dist/**',
     './lang/*.pot',
     './lib/*.php',
-    './template/*.php',
+    './templates/*.php',
     './*.php',
     './readme.txt',
     './screenshot.jpg',

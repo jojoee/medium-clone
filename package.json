@@ -4,7 +4,7 @@
     "build": "gulp",
     "watch": "gulp watch",
     "validate": "npm run build",
-    "zip": "gulp pack"
+    "pack": "gulp pack.zip"
   },
   "engines": {
     "node": ">= 4.5"
