@@ -122,6 +122,7 @@ Source: https://github.com/jojoee/jeans-kit
 * [x] [FastClick](https://github.com/ftlabs/fastclick)
 * [x] Translation ready
 * [ ] Upload to [wordpress.org](https://wordpress.org/)
+* [ ] Remove `gulp-clean` and using `del` instead
 
 === Changelog ===
 

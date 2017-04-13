@@ -16,6 +16,8 @@ var rev = require('gulp-rev');
 var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var zip = require('gulp-zip');
+var clean = require('gulp-clean');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -297,4 +299,29 @@ gulp.task('wiredep', function() {
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
 gulp.task('default', ['clean'], function() {
   gulp.start('build');
+});
+
+gulp.task('clean.release', function() {
+  return gulp.src('./release/', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('pack', ['clean.release'], function() {
+  return gulp.src([
+    './dist/**',
+    './lang/*.pot',
+    './lib/*.php',
+    './template/*.php',
+    './*.php',
+    './readme.txt',
+    './screenshot.jpg',
+    './style.css',
+  ], {base: "."})
+    .pipe(gulp.dest('./release/'));
+});
+
+gulp.task('pack.zip', ['pack'], function() {
+  return gulp.src('./release/**')
+    .pipe(zip('mediumm.zip'))
+    .pipe(gulp.dest('./'));
 });

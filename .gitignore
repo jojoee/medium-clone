@@ -19,3 +19,7 @@ composer.lock
 
 # Backup
 bk*
+
+# Release
+release
+mediumm.zip
