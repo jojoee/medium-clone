@@ -1,31 +1,23 @@
-/*================================================================ WP-PageNavi
-*/
-
 .posts-navigation-wrap {
-  text-align: center;
-  margin: $space8 0;
+
+  .nav-previous,
+  .nav-next {
+    padding: $space8 0;
+    padding-top: $space7;
+  }
+
+  .nav-previous {
+    float: left;
+  }
+
+  .nav-next {
+    float: right;
+  }
 }
 
-.wp-pagenavi {
+@media (max-width: $screen-sm-max) {
 
-  > span.pages {
-    border: none;
-  }
-
-  a,
-  span {
-    padding: $space1 $space2;
-    margin: 2px;
-    border-color: $border-color;
-  }
-
-  a:hover,
-  a:focus,
-  a:active,
-  span.current {
-    color: $white;
-    background-color: $accent-color;
-    border-color: $accent-color;
-    text-decoration: none;
+  .posts-navigation-wrap {
+    padding: 0 15px;
   }
 }

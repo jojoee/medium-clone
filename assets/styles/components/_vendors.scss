@@ -11,12 +11,6 @@
   }
 }
 
-// Unused
-// HACK
-.gallery-caption {
-  color: $text-color;
-}
-
 // Fix
 body.tiled-gallery {
   overflow-y: scroll;
@@ -46,4 +40,38 @@ body.tiled-gallery {
   right: 100%;
   width: 100%;
   height: 2px;
+}
+
+/*================================================================ WP-PageNavi
+*/
+
+.wp-pagenavi {
+
+  > span.pages {
+    border: none;
+  }
+
+  a,
+  span {
+    padding: $space1 $space2;
+    margin: 2px;
+    border-color: $border-color;
+  }
+
+  a:hover,
+  a:focus,
+  a:active,
+  span.current {
+    color: $white;
+    background-color: $accent-color;
+    border-color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+/*================================================================ tinymce
+*/
+
+body#tinymce {
+  margin: 12px !important;
 }

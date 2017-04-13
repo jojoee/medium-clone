@@ -5,13 +5,17 @@ vendor
 
 # Dist
 dist
+
+# Log
 npm-debug.log
 
-# Backup
+# Lock
+yarn.lock
+composer.lock
+
+# IDE && Editor
 .idea
-bk
-README*.md
-!README-*.md
-# readme*.txt
-# !readme-*.txt
-medium-clone.zip
+.vscode
+
+# Backup
+bk*

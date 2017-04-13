@@ -3,37 +3,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: 404.php:4
+#: 404.php:5
 msgid "Sorry, but the page you were trying to view does not exist."
 msgstr ""
 
-#: base.php:14
+#: base.php:15
 msgid ""
 "You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
 "browsehappy.com/\">upgrade your browser</a> to improve your experience."
-msgstr ""
-
-#: functions.php:22
-msgid "Error locating %s for inclusion"
 msgstr ""
 
 #: index.php:5 search.php:5
 msgid "Sorry, no results were found."
 msgstr ""
 
-#: lib/extras.php:31
-msgid "Continued"
-msgstr ""
-
 #: lib/setup.php:30
 msgid "Primary Navigation"
 msgstr ""
 
-#: lib/setup.php:57
+#: lib/setup.php:62
 msgid "Primary"
 msgstr ""
 
-#: lib/setup.php:66
+#: lib/setup.php:71
 msgid "Footer"
 msgstr ""
 
@@ -42,62 +34,32 @@ msgid "Latest Posts"
 msgstr ""
 
 #: lib/titles.php:18
-msgid "Search Results for %s"
+msgid "Search Results: %s"
 msgstr ""
 
 #: lib/titles.php:20
 msgid "Not Found"
 msgstr ""
 
-#: templates/comments.php:9
+#: templates/comments.php:7
 msgctxt "comments title"
 msgid "One response to &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: templates/comments.php:19
+#: templates/comments.php:33
 msgid "&larr; Older comments"
 msgstr ""
 
-#: templates/comments.php:22
+#: templates/comments.php:39
 msgid "Newer comments &rarr;"
 msgstr ""
 
-#: templates/comments.php:31
+#: templates/comments.php:52
 msgid "Comments are closed."
 msgstr ""
 
-#: templates/content-page.php:2 templates/content-single.php:11
+#: templates/content-page.php:34 templates/content-single.php:44
 msgid "Pages:"
-msgstr ""
-
-#: templates/entry-meta.php:2
-msgid "By"
-msgstr ""
-
-#. Theme Name of the plugin/theme
-msgid "Sage Starter Theme"
-msgstr ""
-
-#. Theme URI of the plugin/theme
-msgid "https://roots.io/sage/"
-msgstr ""
-
-#. Description of the plugin/theme
-msgid ""
-"Sage is a WordPress starter theme. <a href=\"https://github.com/roots/sage"
-"\">Contribute on GitHub</a>"
-msgstr ""
-
-#. Author of the plugin/theme
-msgid "Roots"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://roots.io/"
-msgstr ""
-
-#. Template Name of the plugin/theme
-msgid "Custom Template"
 msgstr ""

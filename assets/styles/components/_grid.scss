@@ -1,7 +1,6 @@
 // Grid system
 .main {
   @include make-sm-column($main-sm-columns);
-  padding: 0; // Force remove padding
 
   .sidebar-primary & {
     @include make-sm-column($main-sm-columns - $sidebar-sm-columns);

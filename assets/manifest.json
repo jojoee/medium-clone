@@ -18,7 +18,9 @@
       ]
     },
     "jquery.js": {
-      "bower": ["jquery"]
+      "bower": [
+        "jquery"
+      ]
     }
   },
   "config": {

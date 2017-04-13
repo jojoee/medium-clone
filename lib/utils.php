@@ -3,8 +3,7 @@
 /*================================================================ Domain
 */
 
-function get_site_domain() {
-  $result = '';
+function medm_get_site_domain() {
   $sitename = get_site_url();
   $pattern = '/^(\/\/|http:\/\/|https:\/\/)/';
   $replace = '';
@@ -14,61 +13,78 @@ function get_site_domain() {
   return $result;
 }
 
-function the_site_domain() {
-  echo get_site_domain();
+function medm_the_site_domain() {
+  echo medm_get_site_domain();
 }
 
 /*================================================================ String
 */
 
-function get_limited_string( $str, $length ) {
-  $str_length = strlen( $str );
-
-  if ( $str_length > $length ) {
-    $str = substr( $str, 0, $length );
-    $str = substr( $str, 0, -3 ) . '...';
-  }
-
-  return $str;
-}
-
 /**
- * [is_null_or_empty_string description]
+ * Check the string is null or empty string
  *
  * @see http://stackoverflow.com/questions/381265/better-way-to-check-variable-for-null-or-empty-string
- * 
- * @param  [type]  $str [description]
- * @return boolean      [description]
- */
-function is_null_or_empty_string( $str ) {
-  return ( ! isset( $str ) || trim( $str ) === '' );
-}
-
-/**
- * [get_word_count description]
  *
- * @see http://www.thomashardy.me.uk/wordpress-word-count-function
- * 
- * @param  [type] $content [description]
- * @return [type]          [description]
+ * @param string $str
+ * @return boolean
  */
-function get_word_count( $content = '' ) {
-  $word_count = str_word_count( strip_tags( $content ) );
-
-  return $word_count;
+function medm_is_null_or_empty_string( $str ) {
+  return ( ! isset( $str ) || trim( $str ) === '' );
 }
 
 /*================================================================ Image
 */
 
-function get_background_image_style( $url = '' ) {
-  $result = ( ! is_null_or_empty_string( $url ) )
+/**
+ * Get inline style of provided background image url
+ *
+ * @param string $url
+ * @return string
+ */
+function medm_get_background_image_style( $url = '' ) {
+  $result = ( ! medm_is_null_or_empty_string( $url ) )
     ? 'style="background-image: url(\'' . $url . '\');"'
     : '';
 
   return $result;
 }
 
-function the_background_image_style( $url = '' ) {
-  echo get_background_image_style( $url );
+/**
+ * Echo inline style of provided background image url
+ *
+ * @param string $url
+ */
+function medm_the_background_image_style( $url = '' ) {
+  echo medm_get_background_image_style( $url );
+}
+
+/*================================================================ Font
+*/
+
+/**
+ * Echo fontawesome
+ *
+ * @param string $id
+ */
+function medm_the_fontawesome( $id = 'circle' ) {
+  printf( '<i class="fa fa-%s" aria-hidden="true"></i>', $id );
+}
+
+/*================================================================ Misc
+*/
+
+/**
+ * Get reading time
+ *
+ * @see https://yhello.co/wordpress/add-reading-time-article/
+ *
+ * @param string $content
+ * @return string
+ */
+function medm_get_reading_time( $content ) {
+  $words_per_min = 200;
+  $nwords = str_word_count( $content );
+  $mins = ceil( $nwords / $words_per_min );
+
+  return sprintf( '%d min read', $mins );
 }

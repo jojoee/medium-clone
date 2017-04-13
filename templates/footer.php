@@ -1,21 +1,11 @@
 <div class="footer-sidebar">
   <div class="container">
-    <div class="col-md-4">
-      <?php dynamic_sidebar( 'sidebar-footer1' ); ?>
-    </div>
-
-    <div class="col-md-4">
-      <?php dynamic_sidebar( 'sidebar-footer2' ); ?>
-    </div>
-
-    <div class="col-md-4">
-      <?php dynamic_sidebar( 'sidebar-footer3' ); ?>
-    </div>
+    <?php dynamic_sidebar( 'sidebar-footer' ); ?>
   </div>
 </div><!-- .footer-sidebar -->
 
-<footer class="content-info">
-  <div class="colophon">
-    &copy; <?php echo date( 'Y' ) ?> <?php the_site_domain(); ?>    
+<footer class="footer-info">
+  <div class="container">
+    &copy; <?php echo date( 'Y' ) ?> <?php medm_the_site_domain(); ?>
   </div>
-</footer><!-- .content-info -->
+</footer><!-- .footer-info -->

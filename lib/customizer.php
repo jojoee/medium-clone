@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Customizer;
+namespace Jojoee\Mediumm\Customizer;
 
-use Roots\Sage\Assets;
+use Jojoee\Mediumm\Assets;
 
 /**
  * Add postMessage support
@@ -18,7 +18,7 @@ add_action( 'customize_register', __NAMESPACE__ . '\\customize_register' );
  */
 function customize_preview_js() {
   wp_enqueue_script(
-    'sage/customizer',
+    'mediumm-sage/customizer',
     Assets\asset_path( 'scripts/customizer.js' ),
     [ 'customize-preview' ],
     null,

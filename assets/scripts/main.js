@@ -14,7 +14,7 @@
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
-  var Sage = {
+  var Mediumm = {
     // All pages
     'common': {
       init: function() {
@@ -46,7 +46,7 @@
   var UTIL = {
     fire: function(func, funcname, args) {
       var fire;
-      var namespace = Sage;
+      var namespace = Mediumm;
       funcname = (funcname === undefined) ? 'init' : funcname;
       fire = func !== '';
       fire = fire && namespace[func];
@@ -74,4 +74,11 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+  // menu
+  $mobileMenuBtn = $('.mobile-menu-btn');
+  $mobileMenu = $mobileMenuBtn.next();
+
+  $mobileMenuBtn.click(function() {
+    $mobileMenu.toggleClass('active');
+  });
 })(jQuery); // Fully reference jQuery after this point.

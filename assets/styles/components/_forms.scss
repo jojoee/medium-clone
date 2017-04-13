@@ -7,11 +7,19 @@
   }
 
   .search-field {
-    
+
   }
 
   .search-submit {
     display: none;
+  }
+}
+
+.search-form-nostyle {
+
+  input {
+    background: none;
+    border: none;
   }
 }
 

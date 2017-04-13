@@ -1,17 +1,10 @@
 {
-  "name": "medium-clone",
-  "description": "medium.com clone (wordpress theme)",
-  "homepage": "https://github.com/jojoee/medium-clone",
-  "authors": [
-    "Nathachai Thongniran <inid3a@gmail.com>"
-  ],
-  "license": "GPL",
-  "private": false,
+  "name": "mediumm",
   "dependencies": {
     "fastclick": "^1.0.6",
-    "font-awesome": "^4.6.3",
     "jeans-kit": "^1.1.2",
-    "PACE": "pace#^1.0.2"
+    "PACE": "pace#^1.0.2",
+    "font-awesome": "^4.7.0"
   },
   "overrides": {
     "fastclick": {
@@ -36,7 +29,7 @@
     },
     "PACE": {
       "main": [
-        "./pace.min.js"
+        "./pace.js"
       ]
     }
   }

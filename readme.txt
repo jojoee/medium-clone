@@ -1,0 +1,174 @@
+=== Mediumm ===
+
+[Build Status](https://travis-ci.org/jojoee/medium-clone)
+
+Mediumm - WordPress theme, very inspired by [medium.com](https://medium.com/)
+
+Mediumm WordPress Theme, Copyright 2017 Nathachai Thongniran
+Mediumm is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see http://www.gnu.org/licenses/gpl-2.0.html.
+
+Mediumm WordPress Theme is derived from Sage WordPress Theme, Copyright 2013 Ben Word and Scott Walkinshaw
+Sage WordPress Theme is distributed under the terms of the MIT
+
+Mediumm WordPress Theme bundles the following third-party resources:
+
+FastClick, Copyright 2014 The Financial Times Ltd
+FastClick is licensed under the terms of the MIT
+Source: https://github.com/ftlabs/fastclick
+
+Font Awesome, Copyright 2012 Dave Gandy
+Font Awesome is licensed under the terms of the MIT
+Source: http://fontawesome.io/
+
+Pace, 2013 HubSpot
+Pace.js is licensed under the terms of the MIT
+Source: https://github.com/HubSpot/pace/
+
+Jeans Kit, Copyright 2016 Nathachai Thongniran
+Jeans Kit is licensed under the terms of the MIT
+Source: https://github.com/jojoee/jeans-kit
+
+=== Getting started (development purpose) ===
+
+1. Install [Node.js](https://nodejs.org/)
+2. Set path (e.g. `cd wp-content/themes/medium-clone/`)
+3. Install global - `npm install -g bower gulp jscs yarn`
+4. Install dependencies - `yarn & bower install & composer install`
+5. Set proxy on `devUrl` in `wp-content\themes\medium-clone\assets\manifest.json`
+6. Run task runner - `gulp` or `gulp watch` (to develop)
+
+=== Note ===
+
+* Based on [sage-with-space](https://github.com/jojoee/sage-with-space) 8.4.2 but using `package.json` and `gulpfile.js` from 8.5.1
+* CSS code style: [rscss](http://rscss.io/)
+* Javascript code style: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+* Yoast SEO breadcrumb over Breadcrumb NavXT
+* Using Bootstrap 3 grid instead of their grid
+* Prefix / Text domain: `medm`
+* Theme name: `mediumm`
+* Space multiply: `6px`
+
+=== Medium layout (changed) ===
+
+* Header
+  * [x] Logo (changed to site title)
+  * [ ] Stick on top when scroll up
+  * [ ] Hide on top when scroll down
+  * [ ] Search icon
+  * [ ] Menu (desktop), remove menu from the header except homepage
+  * [ ] Menu (mobile)
+* Content box
+  * [ ] Featured image logic
+  * [x] Number of responses (removed)
+  * [x] Using category instead of tag
+  * [ ] Tag style
+  * [ ] Highlights feature
+  * [ ] Lightbox
+  * [x] Various width side: 660px on tag page, 640px author page, 740px on single post (changed to 720px, from Bootstrap grid system)
+* Sidebar
+  * [x] Stick when scroll (removed)
+* Footer
+  * [x] Load more when scroll (removed, display site url instead)
+  * [x] Add 1 sidebar
+* Page style
+  * [ ] Post (author description on top, full-width featured image)
+  * [x] Archive: Category / Tag
+  * [x] Archive: Author (author section on the top)
+  * [ ] Search
+* Misc
+  * [ ] Improve page loading progression (now, using [PACE](https://github.com/HubSpot/pace))
+  * [ ] Fix `h1` tag on each post / page
+  * [ ] Incomplete green circle of author thumbnail
+
+=== Support ===
+
+* [ ] [WP-PageNavi](https://wordpress.org/plugins/wp-pagenavi/)
+* [x] [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
+* [x] [Really Simple CAPTCHA](https://wordpress.org/plugins/really-simple-captcha/)
+* [x] [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) breadcrumb (page only) (over Breadcrumb NavXT)
+* [x] [Breadcrumb NavXT](https://wordpress.org/plugins/breadcrumb-navxt/)
+* [ ] [Yet Another Related Posts Plugin (YARPP)](https://wordpress.org/plugins/yet-another-related-posts-plugin/)
+* [ ] [WordPress Popular Posts](https://wordpress.org/plugins/wordpress-popular-posts/)
+* [ ] [Facebook Comments](https://wordpress.org/plugins/facebook-comments-plugin/)
+* [ ] Gallery of [Jetpack by WordPress.com](https://wordpress.org/plugins/jetpack/) / [Slim Jetpack](https://wordpress.org/plugins/slimjetpack/)
+* [ ] [Ninja Forms](https://wordpress.org/plugins/ninja-forms/)
+* [ ] [MailChimp for WordPress](https://wordpress.org/plugins/mailchimp-for-wp/)
+* [ ] [Disqus Comment System](https://wordpress.org/plugins/disqus-comment-system/)
+* [ ] [Page Builder by SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/)
+* [ ] [SiteOrigin Widgets Bundle](https://wordpress.org/plugins/so-widgets-bundle/)
+* [ ] [NextGEN Gallery](https://wordpress.org/plugins/nextgen-gallery/)
+* [ ] [WooCommerce](https://wordpress.org/plugins/woocommerce/) and test with dummy woocommerce content
+* [ ] [bbPress](https://wordpress.org/plugins/bbpress/)
+* [ ] [BuddyPress](https://wordpress.org/plugins/buddypress/)
+
+=== Updates ===
+
+* [ ] Demo website
+* [ ] Lightbox: (e.g. [MediumLightbox](https://github.com/davidecalignano/MediumLightbox), [Fluidbox](https://github.com/terrymun/Fluidbox), [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/))
+* [x] Google Fonts: [Web Font Loader](https://github.com/typekit/webfontloader)
+* [x] [FastClick](https://github.com/ftlabs/fastclick)
+* [x] Translation ready
+* [ ] Upload to [wordpress.org](https://wordpress.org/)
+
+=== Changelog ===
+
+= 1.0.0 =
+* First release
+
+=== Contribute ===
+
+1. Setup WordPress server
+2. Install `Node.js`
+3. Install NPM related: `npm install -g gulp bower yarn`
+4. Install PHP related (install `phpcs` and `composer`)
+5. Install [WordPress Coding Standards for PHP_CodeSniffer](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
+6. Install dependencies: `yarn && bower install && composer install`
+7. Test
+  * Manual test layout
+  * Build test: `gulp` without error
+  * PHP Code style: `phpcs -p ./*.php --standard=ruleset.xml` without error
+
+=== Checklist (development purpose) ===
+
+* [x] Theme unit test: [wptest.io](http://wptest.io)
+* [x] Page - [Home](http://localhost:3000)
+* [x] Page - Archive: [Category](http://localhost:3000/category/content)
+* [x] Page - Archive: [Tag](http://localhost:3000/tag/8bit)
+* [x] Page - Archive: [Author](http://localhost:3000/author/joe)
+* [x] Page - Archive: [Date](http://localhost:3000/2012/12)
+* [x] Page - Singular: [Post](http://localhost:3000/image-alignment)
+* [x] Page - Singular: [Page](http://localhost:3000/about)
+* [x] Page - [Attachment](http://localhost:3000/photo-1428189923803-e9801d464d76)
+* [x] Page - [Search](http://localhost:3000/?s=test)
+* [x] Page - [404](http://localhost:3000/404)
+* [x] Component: [Widget tested](http://localhost:3000/) by [Monster Widget](https://wordpress.org/plugins/monster-widget)
+* [x] Component: Menu
+* [x] Component: [WordPress Comment](http://localhost:3000/comments)
+* [ ] Component: [More tag](http://localhost:3000/more-tag/) (optional)
+* [ ] Component: [Paginated](http://localhost:3000/paginated/) (optional)
+* [ ] Component: Stick `footer-info` at the bottom e.g. [404 page](http://localhost:3000/404) (optional)
+* [x] Component: [Contact Form 7](http://localhost:3000/contact-page/)
+* [x] Component: [Really Simple CAPTCHA](http://localhost:3000/contact-page/)
+* [x] Component: [3rd party breadcrumb](http://localhost:3000/parent-page/child-page-03/grandchild-page/) by Yoast breadcrumbs and Breadcrumb NavXT
+* [x] Fixed `REQUIRED` of [Theme Check](https://wordpress.org/plugins/theme-check)
+* [x] [Log Deprecated Notices](https://wordpress.org/plugins/log-deprecated-notices)
+* [x] [RTL Tester](https://wordpress.org/plugins/rtl-tester)
+* [x] Screenshot
+* [x] Customize
+
+## Reference & Thank you
+
+* Project template from [Koa WordPress theme](https://github.com/jojoee/wordpress-theme-koa)

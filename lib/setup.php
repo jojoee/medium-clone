@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Setup;
+namespace Jojoee\Mediumm\Setup;
 
-use Roots\Sage\Assets;
+use Jojoee\Mediumm\Assets;
 
 /**
  * Theme setup
@@ -18,7 +18,7 @@ function setup() {
 
   // Make theme available for translation
   // Community translations can be found at https://github.com/roots/sage-translations
-  load_theme_textdomain( 'mdc', get_template_directory() . '/lang' );
+  load_theme_textdomain( 'medm', get_template_directory() . '/lang' );
 
   // Enable plugins to manage the document title
   // http://codex.wordpress.org/Function_Reference/add_theme_support#Title_Tag
@@ -27,7 +27,7 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus( [
-    'primary_navigation' => __( 'Primary Navigation', 'mdc' )
+    'primary_navigation' => __( 'Primary Navigation', 'medm' ),
   ] );
 
   // Enable post thumbnails
@@ -35,9 +35,6 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support( 'post-thumbnails' );
-  
-  add_theme_support( 'custom-header' );
-  add_theme_support( 'custom-background' );
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -62,30 +59,21 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\\setup' );
  */
 function widgets_init() {
   register_sidebar( [
-    'name'          => __( 'Footer 1', 'mdc' ),
-    'id'            => 'sidebar-footer1',
+    'name'          => __( 'Primary', 'medm' ),
+    'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'after_title'   => '</h3>',
   ] );
 
   register_sidebar( [
-    'name'          => __( 'Footer 2', 'mdc' ),
-    'id'            => 'sidebar-footer2',
+    'name'          => __( 'Footer', 'medm' ),
+    'id'            => 'sidebar-footer',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-  ] );
-
-  register_sidebar( [
-    'name'          => __( 'Footer 3', 'mdc' ),
-    'id'            => 'sidebar-footer3',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'after_title'   => '</h3>',
   ] );
 }
 
@@ -93,7 +81,6 @@ add_action( 'widgets_init', __NAMESPACE__ . '\\widgets_init' );
 
 /**
  * Determine which pages should NOT display the sidebar
- * (unused)
  */
 function display_sidebar() {
   static $display;
@@ -102,7 +89,8 @@ function display_sidebar() {
     // The sidebar will NOT be displayed if ANY of the following return true.
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
-    is_front_page(),
+    is_author(),
+    is_singular(),
     is_page_template( 'template-custom.php' ),
   ] );
 
@@ -113,13 +101,13 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style( 'sage/css', Assets\asset_path( 'styles/main.css' ), false, null );
+  wp_enqueue_style( 'medm-sage/css', Assets\asset_path( 'styles/main.css' ), false, null );
 
   if ( is_single() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }
 
-  wp_enqueue_script( 'sage/js', Assets\asset_path( 'scripts/main.js' ), [ 'jquery' ], null, true );
+  wp_enqueue_script( 'medm-sage/js', Assets\asset_path( 'scripts/main.js' ), [ 'jquery' ], null, true );
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100 );

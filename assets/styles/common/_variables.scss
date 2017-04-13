@@ -3,36 +3,29 @@
 
 $white: #ffffff;
 $black: #33333d;
-$gray: #f9f9f9; // unused
-$gray-dark: #b5b5b5; // unused
-$gray-light: #fdfdfd; // unused
+$gray: rgba(0, 0, 0, .4);
+$gray2: rgba(0, 0, 0, .5);
+$gray3: rgba(0, 0, 0, .6);
 $accent-color: #00ab6b;
 $accent-hover-color: #06e08e;
 
-$body-bg: #ffffff !default;
+$body-bg: #fafafa;
 $text-color: #333333 !default;
 $hr-border: #eeeeee !default;
 $code-bg-color: #f9f9f9;
-$border-color: rgba(0, 0, 0, .09) !default;
-$box-shadow-color: rgba(0, 0, 0, .15) !default;
-$btn-color: #ff0000 !default; // unused
+$border-color: #f0f0f0;
 $btn-shadow-color: #6d6d6d;
-$copyright-color: #b5b5b5;
-$article-bg-color: $white; // unused
-$even-article-bg-color: #fbfbfb;
-$sticky-article-bg-color: $accent-color;
 
-$label-color: #9e9e9e !default; // used for form
-$input-bg-color: #f9f9f9 !default;
-$input-border-color: #d1d1d1 !default;
-$blockquote-bg-color: #f9f9f9 !default;
-$blockquote-border-color: #d1d1d1 !default;
-$link-color: $accent-color !default;
-$link-hover-color: $accent-hover-color !default;
+$label-color: #9e9e9e;
+$input-bg-color: #f9f9f9;
+$input-border-color: #d1d1d1;
+$blockquote-bg-color: #f9f9f9;
+$blockquote-border-color: #d1d1d1;
+$link-color: $accent-color;
+$link-hover-color: $accent-hover-color;
 
-$nav-link-border-color: #3e3e3e;
-$nav-submenu-bg-color: #3a3a3a;
-$nav-expand-icon-color: #b1b1b1;
+$submenu-bg-color: #efefef;
+$submenu-hover-bg-color: #e3e3e3;
 
 /*================================================================ Sage + Bootstrap
 */
@@ -51,6 +44,21 @@ $thumbnail-caption-padding: 9px !default;
 */
 
 /*
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+$screen-xs-max: ($screen-sm-min - 1) !default;
+
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+
 @media (max-width: $screen-xs-max) { ... }
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { ... }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { ... }

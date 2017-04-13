@@ -11,7 +11,7 @@
 @mixin bg-logo {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain; 
+  background-size: contain;
 }
 
 @mixin bg-dummy {
@@ -41,4 +41,9 @@
 @mixin break-word {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+}
+
+@mixin text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

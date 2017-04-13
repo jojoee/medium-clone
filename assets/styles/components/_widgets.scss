@@ -1,35 +1,81 @@
+/*================================================================ Component
+*/
+
+.tag-cloud {
+
+  a {
+    border-radius: 3px;
+    border: 1px solid #f0f0f0;
+    padding: 5px 10px;
+    background: $white;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    line-height: 22px;
+    color: $gray3;
+    font-size: 10px;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+/*================================================================ Widget
+*/
+
 .widget {
   overflow: hidden;
-  border-bottom: 1px solid $border-color;
-  padding: $space3 0;
+  padding: 0;
+  margin-bottom: $space3;
+
+  &:first-child {
+
+  }
 
   &:last-child {
     border-bottom: 0;
+    margin-bottom: 0;
   }
-  
+
   // Title
   h3 {
+    color: $gray;
     margin-top: 0;
+    font-size: 14px;
+    padding-bottom: $space2;
+    border-bottom: 1px solid $border-color;
   }
-  
-  // Listing
-  // (e.g. archive, category)
+
   ul {
+    margin-left: $space1;
+    padding-left: $space1;
 
     li {
-
+      list-style: none;
     }
   }
-  
-  // Search widget
+
+  > ul,
+  ul.menu {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  &.widget_tag_cloud {
+
+    .tagcloud {
+      @extend .tag-cloud;
+    }
+  }
+
   &.widget_search {
 
     .search-submit {
       display: none;
-    } 
+    }
   }
 
-  // Calendar
   &.widget_calendar {
 
     #wp-calendar {
@@ -62,6 +108,14 @@
           text-align: right;
         }
       }
+    }
+  }
+
+  &.widget_text {
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }

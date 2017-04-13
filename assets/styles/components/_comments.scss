@@ -8,11 +8,12 @@
 }
 
 .comments {
+  margin-top: $space5;
 
   > h2 {
     margin: $space4 0;
   }
-  
+
   .pager {
 
     > .previous {
@@ -23,7 +24,7 @@
 
     }
   }
-  
+
   // Comment are closed
   .alert.alert-warning {
 
@@ -56,13 +57,13 @@
 .comment-list {
   margin: 0;
   padding: 0;
-  
+
   article {
     position: relative;
     padding: $space4 0;
-    border-top: 1px solid $gray;
+    border-top: 1px solid $border-color;
   }
-  
+
   // Comment meta
   .comment-meta {
 
@@ -75,7 +76,7 @@
         border-radius: 50%;
         margin-right: $space1;
       }
-  
+
       b,
       a {
         // HACK
@@ -83,7 +84,7 @@
       }
 
       .says {
-        
+
       }
     }
 
@@ -99,7 +100,7 @@
   .comment-content {
 
   }
-  
+
   .comment-reply-link {
     border: 1px solid $border-color;
     border-radius: 2px;
@@ -123,7 +124,7 @@
   margin: $space2 0;
 
   .comment-reply-title {
-    
+
   }
 
   #cancel-comment-reply-link {

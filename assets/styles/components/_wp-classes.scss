@@ -37,12 +37,12 @@
 
 .thumbnail,
 .img-thumbnail {
-  
+
 }
 
 // Captions
 .wp-caption {
-  
+
 }
 
 .wp-caption-text {
@@ -56,8 +56,13 @@
 }
 
 .post-password-form {
-  
+
   input[type="submit"] {
     display: none;
   }
+}
+
+// Used somewhere, I don't know
+.gallery-caption {
+  color: $gray;
 }

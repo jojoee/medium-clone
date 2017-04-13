@@ -2,7 +2,7 @@
   // Site title
   wp.customize('blogname', function(value) {
     value.bind(function(to) {
-      $('.brand').text(to);
+      $('.site-title').text(to);
     });
   });
 })(jQuery);

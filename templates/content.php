@@ -1,19 +1,31 @@
-<?php // post listing ?>
-
 <article <?php post_class(); ?>>
-  <div class="container">
-    <header>
-      <h2 class="entry-title">
-        <a href="<?php the_permalink(); ?>" class="nounderline">
-          <?php the_title(); ?>
-        </a>
-      </h2>
+  <header>
+    <?php
+    if ( ! is_archive() ) {
+      medm_article_category_box();
+    }
 
-      <?php get_template_part( 'templates/entry-meta' ); ?>
-    </header>
+    medm_article_author_box();
+    ?>
+  </header>
 
-    <div class="entry-summary">
+  <div class="inner-entry">
+    <a href="<?php the_permalink(); ?>" class="inner-wrap"></a>
+
+    <h2 class="title">
+      <?php the_title(); ?>
+    </h2>
+
+    <div class="featured-image">
+      <?php the_post_thumbnail( 'large' ); ?>
+    </div>
+
+    <div class="summary">
       <?php the_excerpt(); ?>
     </div>
   </div>
+
+  <a href="<?php the_permalink(); ?>" class="read-more gray">
+    Read more...
+  </a>
 </article>

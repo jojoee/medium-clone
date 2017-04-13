@@ -1,9 +1,13 @@
-<?php use Roots\Sage\Titles; ?>
+<?php
+use Jojoee\Mediumm\Titles;
 
-<div class="page-header">
-  <div class="container">
-    <h1 class="italiana nounderline">
-      <?php echo Titles\title(); ?>
-    </h1>
-  </div>
-</div>
+if ( ! is_front_page() &&
+     ! is_author() &&
+     ! is_singular()
+) {
+
+  $title = Titles\title();
+  printf( '<div class="page-header"><h1>%s</h1></div>',
+    $title
+  );
+}

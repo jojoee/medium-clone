@@ -1,25 +1,178 @@
-/*================================================================ Banner
-*/
-
-
 /*================================================================ Nav Menu
 */
 
-.nav-primary-btn {
-  display: none;
+.header {
+  position: relative;
+  background: $white;
+  border-bottom: 1px solid $border-color;
+
+  .top {
+    height: 65px;
+    border-bottom: 1px solid $border-color;
+    position: relative;
+
+    .site-title {
+      height: 65px;
+      line-height: 65px;
+      @include text-overflow;
+      overflow: hidden;
+    }
+
+    .search-form-nostyle {
+      height: 65px;
+      overflow: hidden;
+
+      .search-form {
+        margin-top: 17px;
+      }
+
+      input[type="search"] {
+        width: 60px;
+        float: right;
+        @include transition;
+
+        &:focus,
+        &:active {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .nav-primary {
-  // display: none;
-  height: 115px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  width: 100%;
-  box-shadow: 0 0 1px $box-shadow-color;
+  position: relative;
 
-  .nav {
-    margin-top: 0;
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.nav {
+    width: 100%;
+    position: relative;
+  }
+
+  li,
+  li a {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  li {
+    position: relative;
+  }
+
+  li a {
+    color: $gray;
+    padding: 15px;
+
+    &:hover,
+    &:focus {
+      color: $black;
+    }
+  }
+
+  // submenu
+  li ul {
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    ul {
+      top: 0;
+      left: 100%;
+    }
+  }
+
+  // submenu of submenu
+  ul li:hover > ul,
+  ul li:focus > ul {
+    clip: inherit;
+  }
+
+  // submenu item
+  li ul li a {
+    display: block;
+    background: $submenu-bg-color;
+    width: 180px;
+    padding: $space2;
+
+    &:hover,
+    &:focus {
+      background: $submenu-hover-bg-color;
+      color: $black;
+    }
+  }
+}
+
+.nav-primary-mobile {
+  padding: $space2 0;
+  text-align: center;
+
+  .mobile-menu-btn {
+
+  }
+
+  // nav container
+  > div {
+    padding-top: $space2;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  li,
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+/*================================================================ Author banner
+*/
+
+.author-banner {
+  padding: $space5 0;
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+
+  .author-meta {
+
+    .author-name {
+      font-weight: 700;
+      word-break: break-word;
+      word-wrap: break-word;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .author-desc {
+      color: $gray3;
+    }
+  }
+
+  .author-avatar {
+    @include bg-img;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+
+  .author-banner {
+
+    .author-avatar {
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+    }
   }
 }

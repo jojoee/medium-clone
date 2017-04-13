@@ -1,11 +1,15 @@
 sudo: false
 language: php
 php:
-  - nightly
-  - 5.6
-  - 5.5
   - 5.4
+  - 5.5
+  - 5.6
+  - 7.0
   - hhvm
+  - nightly
+
+env:
+  - TRAVIS_NODE_VERSION="4"
 
 matrix:
   allow_failures:
@@ -16,16 +20,28 @@ cache:
     - bower_components
     - node_modules
 
+before_install:
+  - export PHPCS_DIR=/tmp/phpcs
+  - export SNIFFS_DIR=/tmp/sniffs
+  - git clone -b master --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git $PHPCS_DIR
+  - git clone -b master --depth 1 https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git $SNIFFS_DIR
+  - $PHPCS_DIR/scripts/phpcs --config-set installed_paths $SNIFFS_DIR
+  - phpenv rehash
+
 install:
+  - nvm install $TRAVIS_NODE_VERSION
+  - nvm use $TRAVIS_NODE_VERSION
   - npm install -g npm@latest
-  - npm install -g bower gulp jscs
+  - npm install -g bower
+  - bower install
   - npm install
   - composer self-update && composer --version
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - composer global require squizlabs/php_codesniffer
 
 script:
-  - npm run build
-  - npm run jshint
-  - npm run jscs
-  - phpcs --standard=ruleset.xml --extensions=php -n -s .
+  - php -v
+  - node -v
+  - npm -v
+  - npm run validate
+  - $PHPCS_DIR/scripts/phpcs -pns ./*.php --standard=ruleset.xml

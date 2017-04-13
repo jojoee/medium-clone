@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Extras;
+namespace Jojoee\Mediumm\Extras;
 
-use Roots\Sage\Setup;
+use Jojoee\Mediumm\Setup;
 
 /**
  * Add <body> classes
@@ -16,12 +16,9 @@ function body_class( $classes ) {
   }
 
   // Add class if sidebar is active
-  // (We have no sidebar)
-  /*
   if ( Setup\display_sidebar() ) {
     $classes[] = 'sidebar-primary';
   }
-  */
 
   return $classes;
 }
@@ -32,7 +29,7 @@ add_filter( 'body_class', __NAMESPACE__ . '\\body_class' );
  * Clean up the_excerpt()
  */
 function excerpt_more() {
-  return ' &hellip; <a href="' . get_permalink() . '">' . __( 'Continued', 'mdc' ) . '</a>';
+  return '...';
 }
 
 add_filter( 'excerpt_more', __NAMESPACE__ . '\\excerpt_more' );
