@@ -41,14 +41,24 @@ Jeans Kit, Copyright 2016 Nathachai Thongniran
 Jeans Kit is licensed under the terms of the MIT
 Source: https://github.com/jojoee/jeans-kit
 
-=== Getting started (development purpose) ===
+=== Getting started (step to) ===
 
+= Build =
 1. Install [Node.js](https://nodejs.org/)
 2. Set path (e.g. `cd wp-content/themes/medium-clone/`)
-3. Install global - `npm install -g bower gulp jscs yarn`
-4. Install dependencies - `yarn & bower install & composer install`
+3. Install global: `npm install -g bower yarn`
+4. Install dependencies: `yarn & bower install`
 5. Set proxy on `devUrl` in `wp-content\themes\medium-clone\assets\manifest.json`
-6. Run task runner - `gulp` or `gulp watch` (to develop)
+6. Build theme: `npm run build`
+
+= Develop =
+1. Follow "Build"
+2. Run task runner: `npm run watch`
+
+= Submit theme =
+1. Follow "Build"
+2. Pack theme: `npm run pack`
+2. Upload to [wordpress.org/themes/upload/](https://wordpress.org/themes/upload/)
 
 === Note ===
 
