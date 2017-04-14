@@ -317,7 +317,7 @@ gulp.task('pack', ['clean.release'], function() {
     './screenshot.jpg',
     './style.css',
   ], {base: "."})
-    .pipe(gulp.dest('./release/'));
+    .pipe(gulp.dest('./release/mediumm'));
 });
 
 gulp.task('pack.zip', ['pack'], function() {
