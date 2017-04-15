@@ -46,6 +46,8 @@ body.tiled-gallery {
 */
 
 .wp-pagenavi {
+  padding: $space5 0;
+  color: $gray;
 
   > span.pages {
     border: none;
@@ -55,7 +57,8 @@ body.tiled-gallery {
   span {
     padding: $space1 $space2;
     margin: 2px;
-    border-color: $border-color;
+    border: 1px solid $border-color;
+    text-decoration: none;
   }
 
   a:hover,

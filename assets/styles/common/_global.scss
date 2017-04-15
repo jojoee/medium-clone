@@ -200,7 +200,7 @@ samp {
   // - Single post
   // - Page
   // - Archive author
-  body.single,
+  body.single-post,
   body.page,
   body.author {
 
@@ -218,7 +218,7 @@ samp {
   }
 
   // Wrap padding-top
-  body.single {
+  body.single-post {
 
     .wrap {
       padding-top: 0;
