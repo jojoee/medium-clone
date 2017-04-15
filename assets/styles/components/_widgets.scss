@@ -80,6 +80,7 @@
 
     #wp-calendar {
       width: 100%;
+      color: $gray;
 
       > caption {
         margin-bottom: $space2;
@@ -90,6 +91,11 @@
         td,
         th {
           text-align: center;
+
+          &#today {
+            color: $black;
+            text-decoration: underline;
+          }
         }
       }
 
