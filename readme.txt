@@ -137,6 +137,9 @@ Source: https://github.com/jojoee/jeans-kit
 
 === Changelog ===
 
+= 1.0.3 =
+* Fix document
+
 = 1.0.2 =
 * Refactor
 * Update and fix css
