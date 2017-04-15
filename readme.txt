@@ -57,8 +57,9 @@ Source: https://github.com/jojoee/jeans-kit
 
 = Submit theme =
 1. Follow "Build"
-2. Pack theme: `npm run pack`
-2. Upload to [wordpress.org/themes/upload/](https://wordpress.org/themes/upload/)
+2. Check line endings
+3. Pack theme: `npm run pack`
+4. Upload to [wordpress.org/themes/upload/](https://wordpress.org/themes/upload/)
 
 === Note ===
 
