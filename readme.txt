@@ -94,7 +94,7 @@ Source: https://github.com/jojoee/jeans-kit
   * [x] Load more when scroll (removed, display site url instead)
   * [x] Add 1 sidebar
 * Page style
-  * [ ] Post (author description on top, full-width featured image)
+  * [ ] Post: author description on top / bottom, full-width featured image
   * [x] Archive: Category / Tag
   * [x] Archive: Author (author section on the top)
   * [ ] Search
@@ -179,6 +179,19 @@ Source: https://github.com/jojoee/jeans-kit
 * [x] [RTL Tester](https://wordpress.org/plugins/rtl-tester)
 * [x] Screenshot
 * [x] Customize
+
+=== Browser compatibility ===
+
+* Chrome
+* Firefox
+* IE 10+
+
+=== Other versions ===
+
+* [x] WordPress: [jojoee/medium-clone](https://github.com/jojoee/medium-clone)
+* [x] Html: [jojoee/mediumm-template](https://github.com/jojoee/mediumm-template)
+* [x] React: [jojoee/mediumm-react](https://github.com/jojoee/mediumm-react)
+* [ ] Hexo
 
 ## Reference & Thank you
 
