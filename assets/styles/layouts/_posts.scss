@@ -34,6 +34,18 @@ main > article {
     .list {
       float: left;
       color: $gray;
+
+      a {
+
+        &:after {
+          content: ','; 
+          margin-right: 3px;
+        }
+
+        &:last-child:after {
+          content: none;
+        }
+      }
     }
   }
 

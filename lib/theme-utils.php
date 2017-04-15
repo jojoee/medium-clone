@@ -27,10 +27,8 @@ function medm_article_category_box() {
         $cate_id = $cate->cat_ID;
         $cate_link = get_category_link( $cate_id );
         $cate_name = $cate->cat_name;
-        $comma = ( $i !== 0 ) ? ', ' : '';
 
-        printf( '%s<a href="%s" class="underline gray">%s</a>',
-          $comma,
+        printf( '<a href="%s" class="underline gray">%s</a>',
           $cate_link,
           $cate_name
         );
