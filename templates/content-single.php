@@ -22,11 +22,10 @@
       </div>
     </div>
 
-    <div class="post-tags">
-      <?php
-      $tags = get_the_tags();
-
-      if ( $tags ) {
+    <?php $tags = get_the_tags(); ?>
+    <?php if ( $tags ) : ?>
+      <div class="post-tags">
+        <?php
         foreach ( $tags as $tag ) {
           $tag_id = $tag->term_id;
           printf( '<a href="%s" class="tag-link-%s" title="%s">%s</a>',
@@ -36,9 +35,9 @@
             $tag->name
           );
         }
-      }
-      ?>
-    </div>
+        ?>
+      </div>
+    <?php endif; ?>
 
     <footer>
       <?php
