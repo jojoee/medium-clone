@@ -136,6 +136,14 @@ Source: https://github.com/jojoee/jeans-kit
 
 === Changelog ===
 
+= 1.0.2 =
+* Refactor
+* Update and fix css
+* Implement webfontloader
+
+= 1.0.1 =
+* Fix build system
+
 = 1.0.0 =
 * First release
 
