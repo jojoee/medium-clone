@@ -68,8 +68,8 @@ function medm_article_author_box() { ?>
         <span class="split"></span>
 
         <?php
-        $excerpt = get_the_excerpt();
-        $reading_time = medm_get_reading_time( $excerpt );
+        $content = get_the_content();
+        $reading_time = medm_get_reading_time( $content );
         echo $reading_time;
         ?>
       </div>
