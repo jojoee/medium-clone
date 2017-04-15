@@ -16,7 +16,11 @@
 
     <div class="summary">
       <?php
-      the_post_thumbnail( 'large' );
+      if ( has_post_thumbnail() ) {
+        echo '<div class="featured-image">';
+        the_post_thumbnail( 'large' );
+        echo '</div>';
+      }
       the_excerpt();
       ?>
     </div>
