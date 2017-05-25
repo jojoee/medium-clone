@@ -20,7 +20,7 @@ function customize_preview_js() {
   wp_enqueue_script(
     'mediumm-sage/customizer',
     Assets\asset_path( 'scripts/customizer.js' ),
-    [ 'customize-preview' ],
+    array( 'customize-preview' ),
     null,
     true
   );

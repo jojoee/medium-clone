@@ -26,9 +26,9 @@ function setup() {
 
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
-  register_nav_menus( [
+  register_nav_menus( array(
     'primary_navigation' => __( 'Primary Navigation', 'medm' ),
-  ] );
+  ) );
 
   // Enable post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
@@ -38,11 +38,11 @@ function setup() {
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
-  add_theme_support( 'post-formats', [ 'aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio' ] );
+  add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio' ) );
 
   // Enable HTML5 markup support
   // http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
-  add_theme_support( 'html5', [ 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ] );
+  add_theme_support( 'html5', array( 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ) );
 
   // Theme Check
   add_theme_support( 'automatic-feed-links' );
@@ -58,23 +58,23 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\\setup' );
  * Register sidebars
  */
 function widgets_init() {
-  register_sidebar( [
+  register_sidebar( array(
     'name'          => __( 'Primary', 'medm' ),
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
-  ] );
+  ) );
 
-  register_sidebar( [
+  register_sidebar( array(
     'name'          => __( 'Footer', 'medm' ),
     'id'            => 'sidebar-footer',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
-  ] );
+  ) );
 }
 
 add_action( 'widgets_init', __NAMESPACE__ . '\\widgets_init' );
@@ -85,14 +85,14 @@ add_action( 'widgets_init', __NAMESPACE__ . '\\widgets_init' );
 function display_sidebar() {
   static $display;
 
-  isset( $display ) || $display = ! in_array( true, [
+  isset( $display ) || $display = ! in_array( true, array(
     // The sidebar will NOT be displayed if ANY of the following return true.
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_author(),
     is_singular(),
     is_page_template( 'template-custom.php' ),
-  ] );
+  ) );
 
   return apply_filters( 'sage/display_sidebar', $display );
 }
@@ -107,8 +107,8 @@ function assets() {
     wp_enqueue_script( 'comment-reply' );
   }
 
-  wp_enqueue_script( 'medm-webfont/js', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', [ ], '1.6.26', true );
-  wp_enqueue_script( 'medm-sage/js', Assets\asset_path( 'scripts/main.js' ), [ 'jquery' ], null, true );
+  wp_enqueue_script( 'medm-webfont/js', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', array(), '1.6.26', true );
+  wp_enqueue_script( 'medm-sage/js', Assets\asset_path( 'scripts/main.js' ), array( 'jquery' ), null, true );
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100 );

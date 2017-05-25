@@ -34,9 +34,9 @@
   </div>
 
   <?php
-  wp_link_pages( [
+  wp_link_pages( array(
     'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'medm' ),
     'after'  => '</p></nav>',
-  ] );
+  ) );
   ?>
 </article>

@@ -9,7 +9,7 @@
  *
  * @link https://github.com/roots/sage/pull/1042
  */
-$sage_includes = [
+$sage_includes = array(
   'lib/constants.php',
   'lib/utils.php',
   'lib/wp-utils.php',
@@ -20,7 +20,7 @@ $sage_includes = [
   'lib/titles.php',
   'lib/wrapper.php',
   'lib/customizer.php',
-];
+);
 
 foreach ( $sage_includes as $file ) {
   $filepath = locate_template( $file );
