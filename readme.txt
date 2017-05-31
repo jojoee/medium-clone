@@ -71,6 +71,7 @@ Source: https://github.com/jojoee/jeans-kit
 * Prefix / Text domain: `medm`
 * Theme name: `mediumm`
 * Space multiply: `6px`
+* PHP 5.3+
 
 === Medium layout (changed) ===
 
