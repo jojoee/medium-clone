@@ -138,6 +138,9 @@ Source: https://github.com/jojoee/jeans-kit
 
 === Changelog ===
 
+= 1.0.5 =
+* Fix minor error on PHP below 5.4
+
 = 1.0.4 =
 * Change PHP array syntax to support PHP below 5.4
 
