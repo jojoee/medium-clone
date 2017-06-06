@@ -47,6 +47,12 @@ function setup() {
   // Theme Check
   add_theme_support( 'automatic-feed-links' );
 
+  // Customize
+  $args = array(
+    'default-color' => 'ff0000',
+  );
+  add_theme_support( 'custom-background', $args );
+
   // Use main stylesheet for visual editor
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
   add_editor_style( Assets\asset_path( 'styles/main.css' ) );
