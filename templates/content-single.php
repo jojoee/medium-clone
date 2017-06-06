@@ -2,7 +2,7 @@
   <article <?php post_class(); ?>>
     <header>
       <?php
-      medm_article_author_box();
+      mediumm_article_author_box();
       ?>
     </header>
 
@@ -42,7 +42,7 @@
     <footer>
       <?php
       wp_link_pages( array(
-        'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'medm' ),
+        'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'mediumm' ),
         'after'  => '</p></nav>',
       ) );
       ?>

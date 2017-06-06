@@ -68,7 +68,7 @@ Source: https://github.com/jojoee/jeans-kit
 * Javascript code style: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 * Yoast SEO breadcrumb over Breadcrumb NavXT
 * Using Bootstrap 3 grid instead of their grid
-* Prefix / Text domain: `medm`
+* Prefix / Text domain: `mediumm`
 * Theme name: `mediumm`
 * Space multiply: `6px`
 * PHP 5.3+

@@ -18,7 +18,7 @@ function setup() {
 
   // Make theme available for translation
   // Community translations can be found at https://github.com/roots/sage-translations
-  load_theme_textdomain( 'medm', get_template_directory() . '/lang' );
+  load_theme_textdomain( 'mediumm', get_template_directory() . '/lang' );
 
   // Enable plugins to manage the document title
   // http://codex.wordpress.org/Function_Reference/add_theme_support#Title_Tag
@@ -27,7 +27,7 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus( array(
-    'primary_navigation' => __( 'Primary Navigation', 'medm' ),
+    'primary_navigation' => __( 'Primary Navigation', 'mediumm' ),
   ) );
 
   // Enable post thumbnails
@@ -68,7 +68,7 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\\setup' );
  */
 function widgets_init() {
   register_sidebar( array(
-    'name'          => __( 'Primary', 'medm' ),
+    'name'          => __( 'Primary', 'mediumm' ),
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
@@ -77,7 +77,7 @@ function widgets_init() {
   ) );
 
   register_sidebar( array(
-    'name'          => __( 'Footer', 'medm' ),
+    'name'          => __( 'Footer', 'mediumm' ),
     'id'            => 'sidebar-footer',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
@@ -110,14 +110,14 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style( 'medm-sage/css', Assets\asset_path( 'styles/main.css' ), false, null );
+  wp_enqueue_style( 'mediumm-sage/css', Assets\asset_path( 'styles/main.css' ), false, null );
 
   if ( is_single() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }
 
-  wp_enqueue_script( 'medm-webfont/js', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', array(), '1.6.26', true );
-  wp_enqueue_script( 'medm-sage/js', Assets\asset_path( 'scripts/main.js' ), array( 'jquery' ), null, true );
+  wp_enqueue_script( 'mediumm-webfont/js', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', array(), '1.6.26', true );
+  wp_enqueue_script( 'mediumm-sage/js', Assets\asset_path( 'scripts/main.js' ), array( 'jquery' ), null, true );
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100 );

@@ -2,10 +2,10 @@
   <header>
     <?php
     if ( ! is_archive() ) {
-      medm_article_category_box();
+      mediumm_article_category_box();
     }
 
-    medm_article_author_box();
+    mediumm_article_author_box();
     ?>
   </header>
 

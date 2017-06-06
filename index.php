@@ -2,7 +2,7 @@
 
 <?php if ( ! have_posts() ) : ?>
   <div class="alert alert-warning">
-    <?php _e( 'Sorry, no results were found.', 'medm' ); ?>
+    <?php _e( 'Sorry, no results were found.', 'mediumm' ); ?>
   </div>
   <?php get_search_form(); ?>
 <?php endif; ?>
@@ -11,4 +11,4 @@
   <?php get_template_part( 'templates/content', get_post_type() !== 'post' ? get_post_type() : get_post_format() ); ?>
 <?php endwhile; ?>
 
-<?php medm_posts_navigation();
+<?php mediumm_posts_navigation();

@@ -1,7 +1,7 @@
 <?php if ( function_exists( 'yoast_breadcrumb' ) || function_exists( 'bcn_display' ) ) : ?>
-  <div class="medmbreadcrumb-wrap">
+  <div class="mediumm-breadcrumb-wrap">
     <div class="container">
-      <div class="medmbreadcrumb">
+      <div class="mediumm-breadcrumb">
         <?php if ( function_exists( 'yoast_breadcrumb' ) ) : ?>
           <?php yoast_breadcrumb(); ?>
 
@@ -35,7 +35,7 @@
 
   <?php
   wp_link_pages( array(
-    'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'medm' ),
+    'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'mediumm' ),
     'after'  => '</p></nav>',
   ) );
   ?>

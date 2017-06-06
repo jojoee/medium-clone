@@ -6,6 +6,6 @@
 
 <footer class="footer-info">
   <div class="container">
-    &copy; <?php echo date( 'Y' ) ?> <?php medm_the_site_domain(); ?>
+    &copy; <?php echo date( 'Y' ) ?> <?php mediumm_the_site_domain(); ?>
   </div>
 </footer><!-- .footer-info -->

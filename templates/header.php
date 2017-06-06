@@ -3,10 +3,10 @@
 $header_text_color = get_header_textcolor();
 $header_image_url = get_header_image();
 $custom_header_style = '<style>';
-if ( ! medm_is_null_or_empty_string( $header_text_color ) ) {
+if ( ! mediumm_is_null_or_empty_string( $header_text_color ) ) {
   $custom_header_style .= sprintf( '.site-title > a { color: #%s !important }', $header_text_color );
 }
-if ( ! medm_is_null_or_empty_string( $header_image_url ) ) {
+if ( ! mediumm_is_null_or_empty_string( $header_image_url ) ) {
   $custom_header_style .= sprintf( '.header { background-image: url("%s"); }', $header_image_url );
 }
 $custom_header_style .= '</style>';
@@ -72,9 +72,9 @@ $custom_header_style .= '</style>';
         </div>
       </div>
 
-      <?php $avatar_url = medm_get_wpauthor_avatar_url(); ?>
+      <?php $avatar_url = mediumm_get_wpauthor_avatar_url(); ?>
       <div class="author-avatar col-xs-3"
-        <?php medm_the_background_image_style( $avatar_url ); ?>
+        <?php mediumm_the_background_image_style( $avatar_url ); ?>
         >
       </div>
     </div>

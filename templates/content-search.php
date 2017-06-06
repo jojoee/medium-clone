@@ -2,7 +2,7 @@
   <header>
     <?php
     if ( get_post_type() === 'post' ) {
-      medm_article_author_box();
+      mediumm_article_author_box();
     }
     ?>
   </header>

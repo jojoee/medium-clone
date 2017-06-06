@@ -6,7 +6,7 @@ if ( post_password_required() ) {
 $comment_title = sprintf(
   _nx( 'One response to &ldquo;%2$s&rdquo;',
     '%1$s responses to &ldquo;%2$s&rdquo;',
-    get_comments_number(), 'comments title', 'medm'
+    get_comments_number(), 'comments title', 'mediumm'
   ),
   number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>'
 );
@@ -30,13 +30,13 @@ $comment_title = sprintf(
         <ul class="pager">
           <?php if ( get_previous_comments_link() ) : ?>
             <li class="previous">
-              <?php previous_comments_link( __( '&larr; Older comments', 'medm' ) ); ?>
+              <?php previous_comments_link( __( '&larr; Older comments', 'mediumm' ) ); ?>
             </li>
           <?php endif; ?>
 
           <?php if ( get_next_comments_link() ) : ?>
             <li class="next">
-              <?php next_comments_link( __( 'Newer comments &rarr;', 'medm' ) ); ?>
+              <?php next_comments_link( __( 'Newer comments &rarr;', 'mediumm' ) ); ?>
             </li>
           <?php endif; ?>
         </ul>
@@ -49,7 +49,7 @@ $comment_title = sprintf(
              post_type_supports( get_post_type(), 'comments' )
   ) : ?>
     <div class="alert alert-warning">
-      <?php _e( 'Comments are closed.', 'medm' ); ?>
+      <?php _e( 'Comments are closed.', 'mediumm' ); ?>
     </div>
   <?php endif; ?>
 

@@ -3,7 +3,7 @@
 /*================================================================ Domain
 */
 
-function medm_get_site_domain() {
+function mediumm_get_site_domain() {
   $sitename = get_site_url();
   $pattern = '/^(\/\/|http:\/\/|https:\/\/)/';
   $replace = '';
@@ -13,8 +13,8 @@ function medm_get_site_domain() {
   return $result;
 }
 
-function medm_the_site_domain() {
-  echo medm_get_site_domain();
+function mediumm_the_site_domain() {
+  echo mediumm_get_site_domain();
 }
 
 /*================================================================ String
@@ -28,7 +28,7 @@ function medm_the_site_domain() {
  * @param string $str
  * @return boolean
  */
-function medm_is_null_or_empty_string( $str ) {
+function mediumm_is_null_or_empty_string( $str ) {
   return ( ! isset( $str ) || trim( $str ) === '' );
 }
 
@@ -41,8 +41,8 @@ function medm_is_null_or_empty_string( $str ) {
  * @param string $url
  * @return string
  */
-function medm_get_background_image_style( $url = '' ) {
-  $result = ( ! medm_is_null_or_empty_string( $url ) )
+function mediumm_get_background_image_style( $url = '' ) {
+  $result = ( ! mediumm_is_null_or_empty_string( $url ) )
     ? 'style="background-image: url(\'' . $url . '\');"'
     : '';
 
@@ -54,8 +54,8 @@ function medm_get_background_image_style( $url = '' ) {
  *
  * @param string $url
  */
-function medm_the_background_image_style( $url = '' ) {
-  echo medm_get_background_image_style( $url );
+function mediumm_the_background_image_style( $url = '' ) {
+  echo mediumm_get_background_image_style( $url );
 }
 
 /*================================================================ Font
@@ -66,7 +66,7 @@ function medm_the_background_image_style( $url = '' ) {
  *
  * @param string $id
  */
-function medm_the_fontawesome( $id = 'circle' ) {
+function mediumm_the_fontawesome( $id = 'circle' ) {
   printf( '<i class="fa fa-%s" aria-hidden="true"></i>', $id );
 }
 
@@ -81,7 +81,7 @@ function medm_the_fontawesome( $id = 'circle' ) {
  * @param string $content
  * @return string
  */
-function medm_get_reading_time( $content ) {
+function mediumm_get_reading_time( $content ) {
   $words_per_min = 200;
   $nwords = str_word_count( $content );
   $mins = ceil( $nwords / $words_per_min );

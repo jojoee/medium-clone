@@ -1,6 +1,6 @@
 <?php
 
-function medm_posts_navigation() { ?>
+function mediumm_posts_navigation() { ?>
   <div class="posts-navigation-wrap clearfix">
     <?php
     if ( function_exists( 'wp_pagenavi' ) ) {
@@ -13,11 +13,11 @@ function medm_posts_navigation() { ?>
   <?php
 }
 
-function medm_article_category_box() {
+function mediumm_article_category_box() {
   $categories = get_the_category();
   ?>
   <div class="categories clearfix">
-    <?php medm_the_fontawesome( 'tag' ); ?>
+    <?php mediumm_the_fontawesome( 'tag' ); ?>
     <div class="list">
       <?php
       $i = 0;
@@ -39,10 +39,10 @@ function medm_article_category_box() {
   <?php
 }
 
-function medm_article_author_box() { ?>
+function mediumm_article_author_box() { ?>
   <div class="article-author">
-    <?php $avatar_url = medm_get_wpauthor_avatar_url(); ?>
-    <div class="avatar" <?php medm_the_background_image_style( $avatar_url ); ?>>
+    <?php $avatar_url = mediumm_get_wpauthor_avatar_url(); ?>
+    <div class="avatar" <?php mediumm_the_background_image_style( $avatar_url ); ?>>
     </div>
 
     <div class="meta">
@@ -67,7 +67,7 @@ function medm_article_author_box() { ?>
 
         <?php
         $content = get_the_content();
-        $reading_time = medm_get_reading_time( $content );
+        $reading_time = mediumm_get_reading_time( $content );
         echo $reading_time;
         ?>
       </div>
