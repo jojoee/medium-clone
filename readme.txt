@@ -118,7 +118,7 @@ Source: https://unsplash.com/@gabrielgm
 * [ ] [Yet Another Related Posts Plugin (YARPP)](https://wordpress.org/plugins/yet-another-related-posts-plugin/)
 * [ ] [WordPress Popular Posts](https://wordpress.org/plugins/wordpress-popular-posts/)
 * [ ] [Facebook Comments](https://wordpress.org/plugins/facebook-comments-plugin/)
-* [ ] Gallery of [Jetpack by WordPress.com](https://wordpress.org/plugins/jetpack/) / [Slim Jetpack](https://wordpress.org/plugins/slimjetpack/)
+* [x] [Jetpack by WordPress.com](https://wordpress.org/plugins/jetpack/) / [Slim Jetpack](https://wordpress.org/plugins/slimjetpack/) Tiled Gallery
 * [ ] [Ninja Forms](https://wordpress.org/plugins/ninja-forms/)
 * [ ] [MailChimp for WordPress](https://wordpress.org/plugins/mailchimp-for-wp/)
 * [ ] [Disqus Comment System](https://wordpress.org/plugins/disqus-comment-system/)
@@ -128,6 +128,8 @@ Source: https://unsplash.com/@gabrielgm
 * [ ] [WooCommerce](https://wordpress.org/plugins/woocommerce/) and test with dummy woocommerce content
 * [ ] [bbPress](https://wordpress.org/plugins/bbpress/)
 * [ ] [BuddyPress](https://wordpress.org/plugins/buddypress/)
+* [x] Customizer: custom body background color and image
+* [x] Customizer: custom header color and header background image
 
 === Updates ===
 
@@ -138,6 +140,7 @@ Source: https://unsplash.com/@gabrielgm
 * [x] Translation ready
 * [ ] Upload to [wordpress.org](https://wordpress.org/)
 * [ ] Remove `gulp-clean` and using `del` instead
+* [ ] Fix `.travis.yml`
 
 === Changelog ===
 
@@ -196,9 +199,10 @@ Source: https://unsplash.com/@gabrielgm
 * [x] Component: [Contact Form 7](http://localhost:3000/contact-page/)
 * [x] Component: [Really Simple CAPTCHA](http://localhost:3000/contact-page/)
 * [x] Component: [3rd party breadcrumb](http://localhost:3000/parent-page/child-page-03/grandchild-page/) by Yoast breadcrumbs and Breadcrumb NavXT
-* [x] Fixed `REQUIRED` of [Theme Check](https://wordpress.org/plugins/theme-check)
-* [x] [Log Deprecated Notices](https://wordpress.org/plugins/log-deprecated-notices)
-* [x] [RTL Tester](https://wordpress.org/plugins/rtl-tester)
+* [x] Vendor: [Theme Check](https://wordpress.org/plugins/theme-check), checked
+* [x] Vendor: [Log Deprecated Notices](https://wordpress.org/plugins/log-deprecated-notices), checked
+* [x] Vendor: [RTL Tester](https://wordpress.org/plugins/rtl-tester), checked
+* [x] Vendor: Jetpack - [Tiled Galleries](http://localhost:3000/tiled-gallery/)
 * [x] Screenshot
 * [x] Customize
 
