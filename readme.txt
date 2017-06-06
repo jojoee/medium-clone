@@ -144,6 +144,19 @@ Source: https://unsplash.com/@gabrielgm
 
 === Changelog ===
 
+= 1.1.0 =
+* Support custom body background color and image
+* Support custom header color and header background image
+* Change text-domain from "medm" to "mediumm"
+* Fixed, un-scale featured image width
+* Fixed, fluid width Youtube video embeds (iframe) in content
+* Fixed, article category tag overflow (listing page)
+* Fixed, mobile menu centering
+* Fixed, Jetpack tiled gallery
+* Fixed, text beside image should be float (single post)
+* Fixed, text overflow on article's content (single post)
+* Fixed, text overflow on article's summary (listing page)
+
 = 1.0.5 =
 * Fix minor error on PHP below 5.4
 
