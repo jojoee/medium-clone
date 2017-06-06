@@ -31,20 +31,17 @@ main > article {
       float: left;
     }
 
-    .list {
-      float: left;
+    a {
       color: $gray;
+      word-break: break-all;
 
-      a {
+      &:after {
+        content: ',';
+        margin-right: 3px;
+      }
 
-        &:after {
-          content: ','; 
-          margin-right: 3px;
-        }
-
-        &:last-child:after {
-          content: none;
-        }
+      &:last-child:after {
+        content: none;
       }
     }
   }
