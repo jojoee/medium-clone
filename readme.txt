@@ -9,8 +9,7 @@ Mediumm is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+the Free Software Foundation, either version 2 of the License.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -40,6 +39,10 @@ Source: https://github.com/HubSpot/pace/
 Jeans Kit, Copyright 2016 Nathachai Thongniran
 Jeans Kit is licensed under the terms of the MIT
 Source: https://github.com/jojoee/jeans-kit
+
+The image is used in screenshot, Gabriel Garcia Marengo
+The image is licensed under the terms of the CC0 1.0 Universal
+Source: https://unsplash.com/@gabrielgm
 
 === Getting started (step to) ===
 
