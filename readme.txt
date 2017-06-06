@@ -144,6 +144,9 @@ Source: https://unsplash.com/@gabrielgm
 
 === Changelog ===
 
+= 1.1.1 =
+* Fixed, show mobile menu even if we didn't select menu
+
 = 1.1.0 =
 * Support custom body background color and image
 * Support custom header color and header background image
