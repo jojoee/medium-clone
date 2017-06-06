@@ -4,7 +4,8 @@
     "fastclick": "^1.0.6",
     "jeans-kit": "^1.1.2",
     "PACE": "pace#^1.0.2",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "fitvids": "FitVids#^1.2.0"
   },
   "overrides": {
     "fastclick": {
@@ -30,6 +31,11 @@
     "PACE": {
       "main": [
         "./pace.js"
+      ]
+    },
+    "fitvids": {
+      "main": [
+        "./jquery.fitvids.js"
       ]
     }
   }

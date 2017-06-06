@@ -87,4 +87,8 @@
   $mobileMenuBtn.click(function() {
     $mobileMenu.toggleClass('active');
   });
+
+  // vendor
+  $('iframe[src*="youtube"]').parent().fitVids();
+
 })(jQuery); // Fully reference jQuery after this point.
