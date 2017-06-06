@@ -8,6 +8,32 @@
   .gallery-item {
     float: left;
     margin: $space1;
+    width: 150px;
+
+    &:nth-child(2n + 1) { clear: both; }
+
+    @media (min-width: $screen-xs-min) {
+      &:nth-child(2n + 1) { clear: none; }
+      &:nth-child(3n + 1) { clear: both; }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      &:nth-child(2n + 1) { clear: none; }
+      &:nth-child(3n + 1) { clear: none; }
+      &:nth-child(4n + 1) { clear: both; }
+    }
+  }
+
+  .gallery-caption {
+    border: 0;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    max-height: 48px;
+    line-height: 16px;
+    padding: 0;
+    margin: 9px;
   }
 }
 
