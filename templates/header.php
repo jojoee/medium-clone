@@ -30,31 +30,31 @@ $custom_header_style .= '</style>';
         </div>
       </div>
 
-      <nav class="nav-primary hidden-xs">
-        <?php
-        if ( has_nav_menu( 'primary_navigation' ) ) {
+      <?php if ( has_nav_menu( 'primary_navigation' ) ) : ?>
+        <nav class="nav-primary hidden-xs">
+          <?php
           wp_nav_menu( array(
             'theme_location' => 'primary_navigation',
             'menu_class'     => 'nav',
           ) );
-        }
-        ?>
-      </nav>
+          ?>
+        </nav>
+      <?php endif; ?>
 
-      <nav class="nav-primary-mobile visible-xs">
-        <button class="mobile-menu-btn">
-          Menu
-        </button>
+      <?php if ( has_nav_menu( 'primary_navigation' ) ) : ?>
+        <nav class="nav-primary-mobile visible-xs">
+          <button class="mobile-menu-btn">
+            Menu
+          </button>
 
-        <?php
-        if ( has_nav_menu( 'primary_navigation' ) ) {
+          <?php
           wp_nav_menu( array(
             'theme_location' => 'primary_navigation',
             'menu_class'     => 'nav',
           ) );
-        }
-        ?>
-      </nav>
+          ?>
+        </nav>
+      <?php endif; ?>
     </div>
   </div>
 </header>
