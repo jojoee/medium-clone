@@ -152,6 +152,8 @@ body.page {
   main > article {
     border: none;
     box-shadow: none;
+    word-wrap: break-word;
+    overflow: hidden;
   }
 }
 
