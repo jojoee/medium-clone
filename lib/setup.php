@@ -52,6 +52,10 @@ function setup() {
     'default-color' => 'ff0000',
   );
   add_theme_support( 'custom-background', $args );
+  add_theme_support( 'custom-header', array(
+    'flex-width'    => true,
+    'flex-height'   => true,
+  ) );
 
   // Use main stylesheet for visual editor
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
