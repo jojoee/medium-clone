@@ -60,7 +60,7 @@ Source: https://unsplash.com/@gabrielgm
 
 = Submit theme =
 1. Follow "Build"
-2. Check line endings
+2. Check line endings, [EOL conversion in notepad ++](https://stackoverflow.com/questions/16239551/eol-conversion-in-notepad)
 3. Pack theme: `npm run pack`
 4. Upload to [wordpress.org/themes/upload/](https://wordpress.org/themes/upload/)
 
@@ -158,13 +158,13 @@ Source: https://unsplash.com/@gabrielgm
 * Fixed, text overflow on article's summary (listing page)
 
 = 1.0.5 =
-* Fix minor error on PHP below 5.4
+* Fixed, minor error on PHP below 5.4
 
 = 1.0.4 =
 * Change PHP array syntax to support PHP below 5.4
 
 = 1.0.3 =
-* Fix document
+* Fixed, document
 
 = 1.0.2 =
 * Refactor
@@ -172,7 +172,7 @@ Source: https://unsplash.com/@gabrielgm
 * Implement webfontloader
 
 = 1.0.1 =
-* Fix build system
+* Fixed, build system
 
 = 1.0.0 =
 * First release
