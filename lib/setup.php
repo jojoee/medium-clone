@@ -48,10 +48,9 @@ function setup() {
   add_theme_support( 'automatic-feed-links' );
 
   // Customize
-  $args = array(
+  add_theme_support( 'custom-background', array(
     'default-color' => 'ff0000',
-  );
-  add_theme_support( 'custom-background', $args );
+  ) );
   add_theme_support( 'custom-header', array(
     'flex-width'    => true,
     'flex-height'   => true,
