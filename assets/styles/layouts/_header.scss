@@ -109,8 +109,9 @@
 }
 
 .nav-primary-mobile {
-  padding: $space2 0;
+  padding: $space2;
   text-align: center;
+  overflow: hidden;
 
   .mobile-menu-btn {
 
@@ -120,6 +121,7 @@
   > div {
     padding-top: $space2;
     display: none;
+    text-align: left;
 
     &.active {
       display: block;
@@ -131,6 +133,10 @@
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+
+  li li {
+    padding-left: $space2;
   }
 }
 
