@@ -144,6 +144,11 @@ Source: https://unsplash.com/@gabrielgm
 
 === Changelog ===
 
+= 1.1.2 =
+* Using Web Font Loader from local instead of CDN
+* Add condition into "excerpt_more" filter to make sure it will not affect admin side
+* Using `esc_url` + `home_url` instead of `get_home_url`
+
 = 1.1.1 =
 * Fixed, show mobile menu even if we didn't select menu
 
