@@ -61,7 +61,9 @@ Source: https://unsplash.com/@gabrielgm
 = Submit theme =
 1. Follow "Build"
 2. Build: `npm run build.prod`
-3. Check line endings, [EOL conversion in notepad ++](https://stackoverflow.com/questions/16239551/eol-conversion-in-notepad)
+3. Check
+  * The directory have no uncommitted files
+  * Line endings, [EOL conversion in notepad ++](https://stackoverflow.com/questions/16239551/eol-conversion-in-notepad)
 4. Pack theme: `npm run pack`
 5. Upload to [wordpress.org/themes/upload/](https://wordpress.org/themes/upload/)
 
@@ -144,6 +146,9 @@ Source: https://unsplash.com/@gabrielgm
 * [ ] Fix `.travis.yml`
 
 === Changelog ===
+
+= 1.1.4 =
+* Update readme.txt
 
 = 1.1.3 =
 * Remove jquery.js from distribution
