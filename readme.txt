@@ -60,9 +60,10 @@ Source: https://unsplash.com/@gabrielgm
 
 = Submit theme =
 1. Follow "Build"
-2. Check line endings, [EOL conversion in notepad ++](https://stackoverflow.com/questions/16239551/eol-conversion-in-notepad)
-3. Pack theme: `npm run pack`
-4. Upload to [wordpress.org/themes/upload/](https://wordpress.org/themes/upload/)
+2. Build: `npm run build.prod`
+3. Check line endings, [EOL conversion in notepad ++](https://stackoverflow.com/questions/16239551/eol-conversion-in-notepad)
+4. Pack theme: `npm run pack`
+5. Upload to [wordpress.org/themes/upload/](https://wordpress.org/themes/upload/)
 
 === Note ===
 

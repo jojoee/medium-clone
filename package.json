@@ -2,6 +2,7 @@
   "name": "mediumm",
   "scripts": {
     "build": "gulp",
+    "build.prod": "gulp --production",
     "watch": "gulp watch",
     "validate": "npm run build",
     "pack": "gulp pack.zip"
