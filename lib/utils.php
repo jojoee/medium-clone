@@ -85,6 +85,7 @@ function mediumm_get_reading_time( $content ) {
   $words_per_min = 200;
   $nwords = str_word_count( $content );
   $mins = ceil( $nwords / $words_per_min );
+  $txt = __( 'min read', 'mediumm' );
 
-  return sprintf( '%d min read', $mins );
+  return sprintf( '%d %s', $mins, $txt );
 }
