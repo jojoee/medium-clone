@@ -114,7 +114,6 @@ function assets() {
     wp_enqueue_script( 'comment-reply' );
   }
 
-  wp_enqueue_script( 'mediumm-webfont/js', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', array(), '1.6.26', true );
   wp_enqueue_script( 'mediumm-sage/js', Assets\asset_path( 'scripts/main.js' ), array( 'jquery' ), null, true );
 }
 

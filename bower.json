@@ -5,7 +5,8 @@
     "jeans-kit": "^1.1.2",
     "PACE": "pace#^1.0.2",
     "font-awesome": "^4.7.0",
-    "fitvids": "FitVids#^1.2.0"
+    "fitvids": "FitVids#^1.2.0",
+    "webfontloader": "^1.6.28"
   },
   "overrides": {
     "fastclick": {
@@ -36,6 +37,11 @@
     "fitvids": {
       "main": [
         "./jquery.fitvids.js"
+      ]
+    },
+    "webfontloader": {
+      "main": [
+        "./webfontloader.js"
       ]
     }
   }
