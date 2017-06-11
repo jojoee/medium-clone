@@ -28,6 +28,6 @@
   </div>
 
   <a href="<?php the_permalink(); ?>" class="read-more gray">
-    Read more...
+    <?php _e( 'Read more...', 'mediumm' ); ?>
   </a>
 </article>

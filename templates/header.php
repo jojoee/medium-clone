@@ -44,7 +44,7 @@ $custom_header_style .= '</style>';
       <?php if ( has_nav_menu( 'primary_navigation' ) ) : ?>
         <nav class="nav-primary-mobile visible-xs">
           <button class="mobile-menu-btn">
-            Menu
+            <?php _e( 'Menu', 'mediumm' ); ?>
           </button>
 
           <?php
