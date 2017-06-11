@@ -18,6 +18,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var zip = require('gulp-zip');
 var clean = require('gulp-clean');
+var beautify = require('gulp-beautify');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -187,6 +188,7 @@ gulp.task('scripts', ['jshint'], function() {
     merged.add(
       gulp.src(dep.globs, {base: 'scripts'})
         .pipe(plumber({errorHandler: onError}))
+        .pipe(beautify({indent_size: 2}))
         .pipe(jsTasks(dep.name))
     );
   });
