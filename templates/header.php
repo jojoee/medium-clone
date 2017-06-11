@@ -19,7 +19,7 @@ $custom_header_style .= '</style>';
         <div class="site-title col-md-8">
           <?php
           printf( '<a href="%s">%s</a>',
-            get_home_url(),
+            esc_url( home_url( '/' ) ),
             get_bloginfo( 'name' )
           );
           ?>
