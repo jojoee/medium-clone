@@ -145,6 +145,13 @@ Source: https://unsplash.com/@gabrielgm
 
 === Changelog ===
 
+= 1.1.3 =
+* Remove jquery.js from distribution
+* Beautify js distribution file
+* Remove `.map` file from distribution
+* Remove post-formats and add custom-background, custom-header, custom-menu tags
+* Fixed, missing translation
+
 = 1.1.2 =
 * Using Web Font Loader from local instead of CDN
 * Add condition into "excerpt_more" filter to make sure it will not affect admin side
