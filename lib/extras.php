@@ -32,4 +32,6 @@ function excerpt_more() {
   return '...';
 }
 
-add_filter( 'excerpt_more', __NAMESPACE__ . '\\excerpt_more' );
+if ( ! is_admin() ) {
+  add_filter( 'excerpt_more', __NAMESPACE__ . '\\excerpt_more' );
+}
