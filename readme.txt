@@ -147,6 +147,11 @@ Source: https://unsplash.com/@gabrielgm
 
 === Changelog ===
 
+= 1.1.5 =
+* Refactor, namespace system
+* Refactor, change code style (using PhpStorm default WordPress code style)
+* Check PHP version on theme activation (theme can not activated, if running on PHP version below 5.3.0)
+
 = 1.1.4 =
 * Update readme.txt
 
