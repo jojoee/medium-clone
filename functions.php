@@ -2,6 +2,33 @@
 
 namespace Jojoee\Mediumm\Functions;
 
+// http://php.net/manual/en/language.namespaces.rationale.php
+define( 'MEDIUMM_MIN_PHP_VERSION', '5.3.0' );
+
+function mediumm_admin_notices() {
+  ?>
+  <div class="update-nag">
+    <?php _e( 'You need to update your PHP version to run Mediumm theme.', 'mediumm' ); ?> <br/>
+    <?php _e( 'Your PHP version: ', 'mediumm' ); ?>
+    <strong><?php echo phpversion(); ?></strong><br/>
+    <?php _e( 'Minimum PHP required version: ', 'mediumm' ); ?>
+    <strong><?php echo MEDIUMM_MIN_PHP_VERSION; ?></strong><br/>
+  </div>
+  <?php
+}
+
+// https://wordpress.stackexchange.com/questions/131157/check-php-version-before-theme-activation
+// https://wpartisan.me/tutorials/check-php-version-switching-theme
+function mediumm_after_switch_theme( $old_theme_name, $old_theme ) {
+  if ( version_compare( phpversion(), MEDIUMM_MIN_PHP_VERSION, '<' ) ) {
+    add_action( 'admin_notices', __NAMESPACE__ . '\\mediumm_admin_notices', 10, 0 );
+    // switch back
+    switch_theme( $old_theme->stylesheet );
+
+    return false;
+  }
+}
+
 /**
  * Sage includes
  *
@@ -34,3 +61,5 @@ unset( $file, $filepath );
 if ( ! isset( $content_width ) ) {
   $content_width = 1170;
 }
+
+add_action( 'after_switch_theme', __NAMESPACE__ . '\\mediumm_after_switch_theme', 10, 2 );
