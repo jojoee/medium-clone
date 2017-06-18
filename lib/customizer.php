@@ -1,8 +1,8 @@
 <?php
 
-namespace Jojoee\Mediumm\Customizer;
+namespace Jojoee\Mediumm\Lib\Customizer;
 
-use Jojoee\Mediumm\Assets;
+use Jojoee\Mediumm\Lib\Assets;
 
 /**
  * Add postMessage support

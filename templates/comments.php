@@ -1,4 +1,7 @@
 <?php
+
+namespace Jojoee\Mediumm\Templates\Comments;
+
 if ( post_password_required() ) {
   return;
 }

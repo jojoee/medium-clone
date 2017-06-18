@@ -1,3 +1,9 @@
+<?php
+
+namespace Jojoee\Mediumm\Templates\ContentPage;
+
+?>
+
 <?php if ( function_exists( 'yoast_breadcrumb' ) || function_exists( 'bcn_display' ) ) : ?>
   <div class="mediumm-breadcrumb-wrap">
     <div class="container">

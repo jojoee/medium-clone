@@ -1,6 +1,6 @@
 <?php
 
-namespace Jojoee\Mediumm\Assets;
+namespace Jojoee\Mediumm\Lib\Assets;
 
 /**
  * Get paths for assets

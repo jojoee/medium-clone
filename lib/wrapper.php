@@ -1,6 +1,6 @@
 <?php
 
-namespace Jojoee\Mediumm\Wrapper;
+namespace Jojoee\Mediumm\Lib\Wrapper;
 
 /**
  * Theme wrapper

@@ -1,11 +1,19 @@
+<?php
+
+namespace Jojoee\Mediumm\Templates\Content;
+
+use Jojoee\Mediumm\Lib\Utils;
+
+?>
+
 <article <?php post_class(); ?>>
   <header>
     <?php
     if ( ! is_archive() ) {
-      mediumm_article_category_box();
+      Utils\mediumm_article_category_box();
     }
 
-    mediumm_article_author_box();
+    Utils\mediumm_article_author_box();
     ?>
   </header>
 

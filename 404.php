@@ -1,4 +1,10 @@
-<?php get_template_part( 'templates/page', 'header' ); ?>
+<?php
+
+namespace Jojoee\Mediumm\Page404;
+
+get_template_part( 'templates/page', 'header' );
+
+?>
 
 <article>
   <div class="alert alert-warning">

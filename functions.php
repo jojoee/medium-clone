@@ -1,4 +1,7 @@
 <?php
+
+namespace Jojoee\Mediumm\Functions;
+
 /**
  * Sage includes
  *
@@ -10,10 +13,7 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 $sage_includes = array(
-  'lib/constants.php',
   'lib/utils.php',
-  'lib/wp-utils.php',
-  'lib/theme-utils.php',
   'lib/assets.php',
   'lib/extras.php',
   'lib/setup.php',

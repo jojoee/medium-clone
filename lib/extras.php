@@ -1,8 +1,8 @@
 <?php
 
-namespace Jojoee\Mediumm\Extras;
+namespace Jojoee\Mediumm\Lib\Extras;
 
-use Jojoee\Mediumm\Setup;
+use Jojoee\Mediumm\Lib\Setup;
 
 /**
  * Add <body> classes

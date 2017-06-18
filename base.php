@@ -1,7 +1,9 @@
 <?php
 
-use Jojoee\Mediumm\Setup;
-use Jojoee\Mediumm\Wrapper;
+namespace Jojoee\Mediumm\Base;
+
+use Jojoee\Mediumm\Lib\Setup;
+use Jojoee\Mediumm\Lib\Wrapper;
 
 ?>
 

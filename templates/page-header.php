@@ -1,5 +1,8 @@
 <?php
-use Jojoee\Mediumm\Titles;
+
+namespace Jojoee\Mediumm\Templates\PageHeader;
+
+use Jojoee\Mediumm\Lib\Titles;
 
 if ( ! is_front_page() &&
      ! is_author() &&

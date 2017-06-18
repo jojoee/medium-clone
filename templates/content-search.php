@@ -1,8 +1,16 @@
+<?php
+
+namespace Jojoee\Mediumm\Templates\ContentSearch;
+
+use Jojoee\Mediumm\Lib\Utils;
+
+?>
+
 <article <?php post_class(); ?>>
   <header>
     <?php
     if ( get_post_type() === 'post' ) {
-      mediumm_article_author_box();
+      Utils\mediumm_article_author_box();
     }
     ?>
   </header>

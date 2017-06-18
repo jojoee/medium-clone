@@ -1,3 +1,11 @@
+<?php
+
+namespace Jojoee\Mediumm\Index;
+
+use Jojoee\Mediumm\Lib\Utils;
+
+?>
+
 <?php get_template_part( 'templates/page', 'header' ); ?>
 
 <?php if ( ! have_posts() ) : ?>
@@ -11,4 +19,4 @@
   <?php get_template_part( 'templates/content', get_post_type() !== 'post' ? get_post_type() : get_post_format() ); ?>
 <?php endwhile; ?>
 
-<?php mediumm_posts_navigation();
+<?php Utils\mediumm_posts_navigation();

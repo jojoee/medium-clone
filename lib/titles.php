@@ -1,6 +1,6 @@
 <?php
 
-namespace Jojoee\Mediumm\Titles;
+namespace Jojoee\Mediumm\Lib\Titles;
 
 /**
  * Page titles

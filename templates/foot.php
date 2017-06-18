@@ -1,1 +1,5 @@
-<?php wp_footer();
+<?php
+
+namespace Jojoee\Mediumm\Templates\Foot;
+
+wp_footer();

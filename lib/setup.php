@@ -1,8 +1,8 @@
 <?php
 
-namespace Jojoee\Mediumm\Setup;
+namespace Jojoee\Mediumm\Lib\Setup;
 
-use Jojoee\Mediumm\Assets;
+use Jojoee\Mediumm\Lib\Assets;
 
 /**
  * Theme setup

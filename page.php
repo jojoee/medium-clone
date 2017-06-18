@@ -1,5 +1,7 @@
 <?php
 
+namespace Jojoee\Mediumm\Page;
+
 while ( have_posts() ) {
   the_post();
 
