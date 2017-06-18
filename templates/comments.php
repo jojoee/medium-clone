@@ -45,7 +45,8 @@ $comment_title = sprintf(
         </ul>
       </nav>
     <?php endif; ?>
-  <?php endif; // have_comments() ?>
+  <?php endif; // have_comments() 
+  ?>
 
   <?php if ( ! comments_open() &&
              get_comments_number() != '0' &&

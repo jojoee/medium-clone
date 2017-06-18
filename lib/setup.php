@@ -50,8 +50,8 @@ function setup() {
   // Customize
   add_theme_support( 'custom-background' );
   add_theme_support( 'custom-header', array(
-    'flex-width'    => true,
-    'flex-height'   => true,
+    'flex-width'  => true,
+    'flex-height' => true,
   ) );
 
   // Use main stylesheet for visual editor

@@ -5,8 +5,8 @@ namespace Jojoee\Mediumm\Templates\Header;
 use Jojoee\Mediumm\Lib\Utils;
 
 // customizer
-$header_text_color = get_header_textcolor();
-$header_image_url = get_header_image();
+$header_text_color   = get_header_textcolor();
+$header_image_url    = get_header_image();
 $custom_header_style = '<style>';
 if ( ! Utils\mediumm_is_null_or_empty_string( $header_text_color ) ) {
   $custom_header_style .= sprintf( '.site-title > a { color: #%s !important }', $header_text_color );
@@ -80,7 +80,7 @@ $custom_header_style .= '</style>';
       <?php $avatar_url = Utils\mediumm_get_wpauthor_avatar_url(); ?>
       <div class="author-avatar col-xs-3"
         <?php Utils\mediumm_the_background_image_style( $avatar_url ); ?>
-        >
+      >
       </div>
     </div>
   </div>
