@@ -167,7 +167,7 @@ function mediumm_article_author_box() { ?>
         <?php
         printf( '<time class="created" datetime="%s">%s</time>',
           get_post_time( 'c', true ),
-          get_the_date( 'M j, Y' )
+          get_the_date()
         );
         ?>
 
