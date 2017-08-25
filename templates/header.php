@@ -34,32 +34,26 @@ $custom_header_style .= '</style>';
           <?php echo get_search_form(); ?>
         </div>
       </div>
+      <nav class="nav-primary hidden-xs">
+        <?php
+        wp_nav_menu( array(
+          'theme_location' => 'primary_navigation',
+          'menu_class'     => 'nav',
+        ) );
+        ?>
+      </nav>
+      <nav class="nav-primary-mobile visible-xs">
+        <button class="mobile-menu-btn">
+          <?php _e( 'Menu', 'mediumm' ); ?>
+        </button>
 
-      <?php if ( has_nav_menu( 'primary_navigation' ) ) : ?>
-        <nav class="nav-primary hidden-xs">
-          <?php
-          wp_nav_menu( array(
-            'theme_location' => 'primary_navigation',
-            'menu_class'     => 'nav',
-          ) );
-          ?>
-        </nav>
-      <?php endif; ?>
-
-      <?php if ( has_nav_menu( 'primary_navigation' ) ) : ?>
-        <nav class="nav-primary-mobile visible-xs">
-          <button class="mobile-menu-btn">
-            <?php _e( 'Menu', 'mediumm' ); ?>
-          </button>
-
-          <?php
-          wp_nav_menu( array(
-            'theme_location' => 'primary_navigation',
-            'menu_class'     => 'nav',
-          ) );
-          ?>
-        </nav>
-      <?php endif; ?>
+        <?php
+        wp_nav_menu( array(
+          'theme_location' => 'primary_navigation',
+          'menu_class'     => 'nav',
+        ) );
+        ?>
+      </nav>
     </div>
   </div>
 </header>
