@@ -45,4 +45,6 @@ namespace Jojoee\Mediumm\Templates\ContentPage;
     'after'  => '</p></nav>',
   ) );
   ?>
+
+  <?php comments_template( '/templates/comments.php' ); ?>
 </article>
