@@ -69,15 +69,15 @@ Source: https://unsplash.com/@gabrielgm
 
 === Note ===
 
-* Based on [sage-with-space](https://github.com/jojoee/sage-with-space) 8.4.2 but using `package.json` and `gulpfile.js` from 8.5.1
+* Theme name: `mediumm`
+* Text domain: `mediumm`
+* PHP: 5.3.0+
+* Breadcrumb: Yoast SEO over Breadcrumb NavXT
+* Based: [sage-with-space](https://github.com/jojoee/sage-with-space) 8.4.2 but using `package.json` and `gulpfile.js` from 8.5.1
 * CSS code style: [rscss](http://rscss.io/)
 * Javascript code style: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-* Yoast SEO breadcrumb over Breadcrumb NavXT
-* Using Bootstrap 3 grid instead of their grid
-* Prefix / Text domain: `mediumm`
-* Theme name: `mediumm`
+* CSS grid: Bootstrap 3
 * Space multiply: `6px`
-* PHP 5.3+
 
 === Medium layout (changed) ===
 

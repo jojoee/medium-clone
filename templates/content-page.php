@@ -39,10 +39,14 @@ namespace Jojoee\Mediumm\Templates\ContentPage;
     </div>
   </div>
 
-  <?php
-  wp_link_pages( array(
-    'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'mediumm' ),
-    'after'  => '</p></nav>',
-  ) );
-  ?>
+  <footer>
+    <?php
+    wp_link_pages( array(
+      'before' => '<nav class="page-nav"><p>' . __( 'Pages:', 'mediumm' ),
+      'after'  => '</p></nav>',
+    ) );
+    ?>
+  </footer>
+
+  <?php comments_template( '/templates/comments.php' ); ?>
 </article>
