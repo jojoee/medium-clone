@@ -78,6 +78,10 @@ Source: https://unsplash.com/@gabrielgm
 * Javascript code style: [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 * CSS grid: Bootstrap 3
 * Space multiply: `6px`
+* Browser compatibility
+  * Chrome
+  * Firefox
+  * IE 10+
 
 === Medium layout (changed) ===
 
@@ -244,12 +248,6 @@ Source: https://unsplash.com/@gabrielgm
 * [x] Vendor: Jetpack - [Tiled Galleries](http://localhost:3000/tiled-gallery/)
 * [x] Screenshot
 * [x] Customize
-
-=== Browser compatibility ===
-
-* Chrome
-* Firefox
-* IE 10+
 
 === Other versions ===
 
