@@ -249,6 +249,11 @@ Source: https://unsplash.com/@gabrielgm
 * [x] Screenshot
 * [x] Customize
 
+=== Contributor ===
+
+* [jojoee](https://profiles.wordpress.org/jojoee)
+* [tlongren](https://profiles.wordpress.org/tlongren)
+
 === Other versions ===
 
 * [x] WordPress: [jojoee/medium-clone](https://github.com/jojoee/medium-clone)
